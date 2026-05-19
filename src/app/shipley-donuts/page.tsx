@@ -1,0 +1,222 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Shipley Donuts | Business Showcase",
+  description: "Shipley Do-Nuts — hot, fresh, and iconic since 1936.",
+};
+
+const products = [
+  {
+    src: "/shipley/shipley-glazed-donut.jpg",
+    name: "Original Glazed",
+    desc: "Light, fluffy, and golden — our signature glaze recipe unchanged since 1936.",
+  },
+  {
+    src: "/shipley/fresh-kolaches.jpg",
+    name: "Fresh Kolaches",
+    desc: "Savory pastries filled with premium sausage, cheese and other savory delights.",
+  },
+  {
+    src: "/shipley/specialty-varieties.jpg",
+    name: "Specialty Varieties",
+    desc: "From hot to iced coffees and chocolate donuts are crafted with the same attention to detail.",
+  },
+];
+
+const bullets = [
+  "Served Hot Every Day",
+  "Fresh Daily at 5 AM",
+  "Fresh Quality Ingredients",
+];
+
+export default function ShipleyPage() {
+  return (
+    <main className="bg-[#FFF8F0]">
+      {/* Fixed Nav */}
+      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex items-center justify-between bg-[#FFF8F0]/90 backdrop-blur-sm border-b border-amber-100/60">
+        <Link
+          href="/"
+          className="text-xs tracking-widest uppercase text-amber-800/50 hover:text-amber-900 transition-colors duration-200"
+        >
+          Back to Portfolio
+        </Link>
+        <div className="relative h-7 w-36">
+          <Image
+            src="/shipley/shipley-cursive-logo.jpg"
+            alt="Shipley Donuts"
+            fill
+            className="object-contain"
+          />
+        </div>
+      </nav>
+
+      {/* ─── SPLIT HERO — large rounded image left, text right ─── */}
+      <section className="min-h-screen px-6 md:px-16 flex items-center pt-20">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
+          {/* Hero Image — left */}
+          <div className="group relative rounded-3xl overflow-hidden shadow-2xl shadow-amber-100 h-[420px] md:h-[600px] order-2 md:order-1">
+            <Image
+              src="/shipley/shipley-landing-page.jpg"
+              alt="Shipley Donuts"
+              fill
+              priority
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+
+          {/* Text — right */}
+          <div className="order-1 md:order-2">
+            <div className="relative h-10 w-48 mb-6">
+              <Image
+                src="/shipley/shipley-cursive-logo.jpg"
+                alt="Shipley Donuts"
+                fill
+                className="object-contain object-left"
+              />
+            </div>
+            <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-5 font-medium">
+              Since 1936&nbsp;&nbsp;•&nbsp;&nbsp;Fresh Daily at 5am
+            </p>
+            <h1
+              className="font-black leading-none tracking-tight text-amber-950 mb-6"
+              style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)" }}
+            >
+              Hot. Fresh.
+              <br />
+              Iconic.
+            </h1>
+            <p className="text-amber-900/60 text-lg leading-relaxed mb-10 max-w-md">
+              Handcrafted donuts and kolaches made fresh daily with the finest
+              ingredients.
+            </p>
+            <Link
+              href="#products"
+              className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-amber-500 text-white rounded-full px-9 py-4 hover:bg-amber-400 transition-colors duration-300"
+            >
+              Glaze Craze
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PERFECTLY GLAZED — text left, image right ─── */}
+      <section className="px-6 md:px-16 py-24 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+          <div>
+            <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-4 font-medium">
+              Our Craft
+            </p>
+            <h2 className="text-4xl md:text-5xl font-black text-amber-950 mb-6">
+              Perfectly Glazed
+            </h2>
+            <p className="text-amber-900/60 leading-relaxed mb-8 max-w-md">
+              Nearly 90 years of handcrafted recipes made fresh daily using
+              premium ingredients and time-honored techniques.
+            </p>
+            <ul className="space-y-3">
+              {bullets.map((item) => (
+                <li
+                  key={item}
+                  className="flex items-center gap-3 text-amber-900/80"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="group relative rounded-3xl overflow-hidden shadow-lg shadow-amber-100 h-[380px]">
+            <Image
+              src="/shipley/original-glazed.jpg"
+              alt="Original Glazed Donuts"
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              sizes="(max-width: 768px) 100vw, 50vw"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ─── PRODUCTS GRID ─── */}
+      <section id="products" className="px-6 md:px-16 pb-24 max-w-7xl mx-auto">
+        <div className="mb-12">
+          <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-3 font-medium">
+            Our Selection
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-amber-950">
+            Handcrafted Daily
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {products.map((product) => (
+            <div
+              key={product.name}
+              className="group rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-100/80"
+            >
+              <div className="relative h-56 overflow-hidden">
+                <Image
+                  src={product.src}
+                  alt={product.name}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-base font-bold text-slate-800 mb-1.5">
+                  {product.name}
+                </h3>
+                <p className="text-slate-500 text-xs leading-relaxed">
+                  {product.desc}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ─── ORIGINAL RECIPE ─── */}
+      <section className="px-6 md:px-16 py-24 bg-amber-50">
+        <div className="max-w-3xl mx-auto text-center">
+          <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-4 font-medium">
+            Our Heritage
+          </p>
+          <h2 className="text-4xl md:text-5xl font-black text-amber-950 mb-6">
+            Original Recipe
+          </h2>
+          <p className="text-amber-900/60 text-lg leading-relaxed">
+            Recipes have been consistent through the years together with our
+            master bakers.
+          </p>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-amber-100 px-8 py-10 bg-[#FFF8F0]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+          <Link
+            href="/"
+            className="inline-block text-xs tracking-widest uppercase font-medium text-amber-800 border border-amber-800/25 rounded-full px-6 py-3 hover:bg-amber-800 hover:text-white transition-all duration-300"
+          >
+            Back to Portfolio
+          </Link>
+          <div className="relative h-7 w-32 opacity-50">
+            <Image
+              src="/shipley/shipley-cursive-logo.jpg"
+              alt="Shipley Donuts"
+              fill
+              className="object-contain"
+            />
+          </div>
+          <p className="text-amber-800/40 text-xs">
+            © 1936 Shipley Do-Nuts. All rights reserved.
+          </p>
+        </div>
+      </footer>
+    </main>
+  );
+}
