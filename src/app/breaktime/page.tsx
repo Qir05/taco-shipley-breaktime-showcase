@@ -39,7 +39,7 @@ export default function BreaktimePage() {
           Back to Portfolio
         </Link>
         <Image
-          src="/breaktime/breaktimelogo.jpg"
+          src="/breaktime/breaktime-logo1.jpg"
           alt="Breaktime"
           width={120}
           height={50}
@@ -53,7 +53,7 @@ export default function BreaktimePage() {
           {/* Text — left */}
           <div>
             <Image
-              src="/breaktime/breaktimelogo.jpg"
+              src="/breaktime/breaktime-logo1.jpg"
               alt="Breaktime"
               width={460}
               height={190}
@@ -160,7 +160,7 @@ export default function BreaktimePage() {
             Back to Portfolio
           </Link>
           <Image
-            src="/breaktime/breaktimelogo.jpg"
+            src="/breaktime/breaktime-logo1.jpg"
             alt="Breaktime"
             width={120}
             height={50}

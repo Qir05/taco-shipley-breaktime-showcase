@@ -47,6 +47,13 @@ export default function TacoBellPage() {
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
           {/* Text */}
           <div>
+            <Image
+              src="/taco/tacobell-logo.jpg"
+              alt="Taco Bell"
+              width={300}
+              height={200}
+              className="w-[220px] sm:w-[380px] md:w-[500px] h-auto object-contain mix-blend-multiply mb-5"
+            />
             <p className="text-xs tracking-[0.4em] uppercase text-[#702082] mb-5 font-medium">
               Est. 1962
             </p>

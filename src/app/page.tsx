@@ -48,6 +48,13 @@ export default function HomePage() {
       <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
+            <Image
+              src="/taco/tacobell-logo.jpg"
+              alt="Taco Bell"
+              width={300}
+              height={200}
+              className="w-[220px] sm:w-[380px] md:w-[480px] h-auto object-contain mix-blend-multiply mb-5"
+            />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
               Est. 1962
             </p>
@@ -122,7 +129,7 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
             <Image
-              src="/breaktime/breaktimelogo.jpg"
+              src="/breaktime/breaktime-logo1.jpg"
               alt="Breaktime"
               width={460}
               height={190}
@@ -161,12 +168,18 @@ export default function HomePage() {
       <footer className="border-t border-slate-200/60 px-8 py-10 bg-[#EEF7FF]">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-10">
-            {/* Taco Bell — styled text to match logo visual height */}
+            {/* Taco Bell logo */}
             <Link
               href="/taco-bell"
-              className="text-sm font-bold tracking-wide uppercase text-[#702082] hover:opacity-75 transition-opacity duration-200 leading-none"
+              className="opacity-70 hover:opacity-100 transition-opacity duration-200 flex-shrink-0"
             >
-              Taco Bell
+              <Image
+                src="/taco/tacobell-logo.jpg"
+                alt="Taco Bell"
+                width={100}
+                height={67}
+                className="h-8 w-auto object-contain mix-blend-multiply"
+              />
             </Link>
             {/* Shipley cursive logo */}
             <Link
@@ -187,7 +200,7 @@ export default function HomePage() {
               className="opacity-70 hover:opacity-100 transition-opacity duration-200 flex-shrink-0"
             >
               <Image
-                src="/breaktime/breaktimelogo.jpg"
+                src="/breaktime/breaktime-logo1.jpg"
                 alt="Breaktime"
                 width={120}
                 height={50}
