@@ -28,3 +28,29 @@ body {
 *::after {
   box-sizing: border-box;
 }
+
+/* ── "Meets Energy" animated gradient effect ── */
+@keyframes energy-gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes energy-glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(236, 72, 153, 0.22))
+            drop-shadow(0 0 18px rgba(168, 85, 247, 0.16));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(236, 72, 153, 0.34))
+            drop-shadow(0 0 28px rgba(249, 115, 22, 0.22));
+  }
+}
+
+.energy-gradient-text {
+  background-size: 220% 220%;
+  animation:
+    energy-gradient-shift 8s ease-in-out infinite,
+    energy-glow-pulse 6s ease-in-out infinite;
+  will-change: background-position, filter;
+}

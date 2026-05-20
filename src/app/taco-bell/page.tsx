@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ImageSlideshow from "@/components/ImageSlideshow";
 
 export const metadata: Metadata = {
   title: "Taco Bell | Business Showcase",
@@ -69,17 +70,17 @@ export default function TacoBellPage() {
             </Link>
           </div>
 
-          {/* Hero Image */}
-          <div className="group relative rounded-3xl overflow-hidden shadow-2xl shadow-slate-200 h-[420px] md:h-[600px]">
-            <Image
-              src="/taco/taco-building.jpg"
-              alt="Taco Bell"
-              fill
-              priority
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+          {/* Hero Slideshow */}
+          <ImageSlideshow
+            images={[
+              { src: "/taco/taco-building.jpg", alt: "Taco Bell" },
+              { src: "/taco/taco-station.jpg", alt: "Taco Bell Station" },
+              { src: "/taco/taco-food-1.jpg", alt: "Taco Bell Food" },
+              { src: "/taco/taco-food-2.jpg", alt: "Taco Bell Food" },
+              { src: "/taco/taco-food-3.jpg", alt: "Taco Bell Food" },
+            ]}
+            className="rounded-3xl shadow-2xl shadow-slate-200 h-[420px] md:h-[600px]"
+          />
         </div>
       </section>
 

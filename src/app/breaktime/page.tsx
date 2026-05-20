@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ImageSlideshow from "@/components/ImageSlideshow";
 
 export const metadata: Metadata = {
   title: "Breaktime | Business Showcase",
@@ -52,7 +53,7 @@ export default function BreaktimePage() {
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
           {/* Text — left */}
           <div>
-            <div className="relative h-12 w-44 mb-6">
+            <div className="relative h-16 w-[230px] md:w-[340px] mb-6">
               <Image
                 src="/breaktime/breaktimelogo.jpg"
                 alt="Breaktime"
@@ -83,17 +84,16 @@ export default function BreaktimePage() {
             </Link>
           </div>
 
-          {/* Hero Image — right */}
-          <div className="group relative rounded-3xl overflow-hidden shadow-2xl shadow-teal-100 h-[420px] md:h-[600px]">
-            <Image
-              src="/breaktime/breaktime-hero1.jpg"
-              alt="Breaktime"
-              fill
-              priority
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+          {/* Hero Slideshow — right */}
+          <ImageSlideshow
+            images={[
+              { src: "/breaktime/breaktime-hero1.jpg", alt: "Breaktime" },
+              { src: "/breaktime/breaktime-store1.jpg", alt: "Breaktime Store" },
+              { src: "/breaktime/breaktime-store2.jpg", alt: "Breaktime Store" },
+              { src: "/breaktime/breaktime-store3.jpg", alt: "Breaktime Store" },
+            ]}
+            className="rounded-3xl shadow-2xl shadow-teal-100 h-[420px] md:h-[600px]"
+          />
         </div>
       </section>
 

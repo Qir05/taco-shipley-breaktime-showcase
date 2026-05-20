@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import ImageSlideshow from "@/components/ImageSlideshow";
 
 export const metadata: Metadata = {
   title: "Shipley Donuts | Business Showcase",
@@ -55,21 +56,21 @@ export default function ShipleyPage() {
       {/* ─── SPLIT HERO — large rounded image left, text right ─── */}
       <section className="min-h-screen px-6 md:px-16 flex items-center pt-20">
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
-          {/* Hero Image — left */}
-          <div className="group relative rounded-3xl overflow-hidden shadow-2xl shadow-amber-100 h-[420px] md:h-[600px] order-2 md:order-1">
-            <Image
-              src="/shipley/shipley-landing-page.jpg"
-              alt="Shipley Donuts"
-              fill
-              priority
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+          {/* Hero Slideshow — left */}
+          <ImageSlideshow
+            images={[
+              { src: "/shipley/shipley-landing-page.jpg", alt: "Shipley Donuts" },
+              { src: "/shipley/shipley-glazed-donut.jpg", alt: "Glazed Donut" },
+              { src: "/shipley/fresh-kolaches.jpg", alt: "Fresh Kolaches" },
+              { src: "/shipley/specialty-varieties.jpg", alt: "Specialty Varieties" },
+              { src: "/shipley/original-glazed.jpg", alt: "Original Glazed" },
+            ]}
+            className="rounded-3xl shadow-2xl shadow-amber-100 h-[420px] md:h-[600px] order-2 md:order-1"
+          />
 
           {/* Text — right */}
           <div className="order-1 md:order-2">
-            <div className="relative h-10 w-48 mb-6">
+            <div className="relative h-16 w-[230px] md:w-[340px] mb-6">
               <Image
                 src="/shipley/shipley-cursive-logo.jpg"
                 alt="Shipley Donuts"

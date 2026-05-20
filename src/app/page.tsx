@@ -38,7 +38,7 @@ export default function HomePage() {
           style={{ fontSize: "clamp(3.5rem, 9vw, 8rem)" }}
         >
           <span className="block text-slate-900">Where Soul</span>
-          <span className="block bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
+          <span className="energy-gradient-text block bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
             Meets Energy
           </span>
         </h1>
@@ -90,7 +90,7 @@ export default function HomePage() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative h-9 w-44 mb-5">
+            <div className="relative h-16 w-[230px] md:w-[330px] mb-5">
               <Image
                 src="/shipley/shipley-cursive-logo.jpg"
                 alt="Shipley Donuts"
@@ -122,7 +122,7 @@ export default function HomePage() {
       <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
-            <div className="relative h-11 w-40 mb-5">
+            <div className="relative h-16 w-[230px] md:w-[330px] mb-5">
               <Image
                 src="/breaktime/breaktimelogo.jpg"
                 alt="Breaktime"
