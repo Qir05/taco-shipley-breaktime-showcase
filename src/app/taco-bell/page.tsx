@@ -52,7 +52,8 @@ export default function TacoBellPage() {
               alt="Taco Bell"
               width={300}
               height={200}
-              className="w-[220px] sm:w-[380px] md:w-[500px] h-auto object-contain mix-blend-multiply mb-5"
+              className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain mix-blend-multiply mb-5"
+              style={{ mixBlendMode: "multiply" }}
             />
             <p className="text-xs tracking-[0.4em] uppercase text-[#702082] mb-5 font-medium">
               Est. 1962

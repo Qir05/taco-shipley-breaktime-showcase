@@ -53,7 +53,8 @@ export default function HomePage() {
               alt="Taco Bell"
               width={300}
               height={200}
-              className="w-[220px] sm:w-[380px] md:w-[480px] h-auto object-contain mix-blend-multiply mb-5"
+              className="w-[280px] sm:w-[380px] md:w-[480px] h-auto object-contain mix-blend-multiply mb-5"
+              style={{ mixBlendMode: "multiply" }}
             />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
               Est. 1962
@@ -179,6 +180,7 @@ export default function HomePage() {
                 width={100}
                 height={67}
                 className="h-8 w-auto object-contain mix-blend-multiply"
+                style={{ mixBlendMode: "multiply" }}
               />
             </Link>
             {/* Shipley cursive logo */}
