@@ -52,35 +52,36 @@ export default function BreaktimePage() {
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
           {/* Text — left */}
           <div className="flex flex-col items-start">
-            <div className="relative w-[260px] sm:w-[360px] md:w-[460px] max-w-full h-[110px] sm:h-[140px] md:h-[160px]">
-              <Image
-                src="/breaktime/breaktime-logo1.jpg"
-                alt="Breaktime"
-                fill
-                className="object-contain object-left mix-blend-multiply"
-              />
+            <Image
+              src="/breaktime/breaktime-logo1.jpg"
+              alt="Breaktime"
+              width={900}
+              height={350}
+              className="w-[360px] sm:w-[440px] md:w-[520px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+            />
+            <div className="mt-[-35px] sm:mt-[-50px] md:mt-[-65px]">
+              <p className="mb-4 text-xs tracking-[0.4em] uppercase text-teal-600 font-medium">
+                24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
+              </p>
+              <h1
+                className="font-black leading-none tracking-tight text-teal-950 mb-6"
+                style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)" }}
+              >
+                Fuel Your
+                <br />
+                Journey
+              </h1>
+              <p className="text-teal-800/60 text-lg leading-relaxed mb-10 max-w-md">
+                Premium destination, fresh food and everything you need to
+                recharge your vehicle and yourself.
+              </p>
+              <Link
+                href="#community"
+                className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-teal-600 text-white rounded-full px-9 py-4 hover:bg-teal-500 transition-colors duration-300"
+              >
+                Fuel Your Journey
+              </Link>
             </div>
-            <p className="mt-5 text-xs tracking-[0.4em] uppercase text-teal-600 font-medium">
-              24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
-            </p>
-            <h1
-              className="mt-4 font-black leading-none tracking-tight text-teal-950"
-              style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)" }}
-            >
-              Fuel Your
-              <br />
-              Journey
-            </h1>
-            <p className="mt-5 text-teal-800/60 text-lg leading-relaxed max-w-md">
-              Premium destination, fresh food and everything you need to
-              recharge your vehicle and yourself.
-            </p>
-            <Link
-              href="#community"
-              className="mt-8 inline-block text-sm font-bold tracking-[0.15em] uppercase bg-teal-600 text-white rounded-full px-9 py-4 hover:bg-teal-500 transition-colors duration-300"
-            >
-              Fuel Your Journey
-            </Link>
           </div>
 
           {/* Hero Slideshow — right */}
