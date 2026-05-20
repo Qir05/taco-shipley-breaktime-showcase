@@ -38,14 +38,13 @@ export default function BreaktimePage() {
         >
           Back to Portfolio
         </Link>
-        <div className="relative h-7 w-28">
-          <Image
-            src="/breaktime/breaktimelogo.jpg"
-            alt="Breaktime"
-            fill
-            className="object-contain"
-          />
-        </div>
+        <Image
+          src="/breaktime/breaktimelogo.jpg"
+          alt="Breaktime"
+          width={120}
+          height={50}
+          className="h-7 w-auto object-contain mix-blend-multiply"
+        />
       </nav>
 
       {/* ─── SPLIT HERO — text left, large rounded image right ─── */}
@@ -53,14 +52,13 @@ export default function BreaktimePage() {
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
           {/* Text — left */}
           <div>
-            <div className="relative h-16 w-[230px] md:w-[340px] mb-6">
-              <Image
-                src="/breaktime/breaktimelogo.jpg"
-                alt="Breaktime"
-                fill
-                className="object-contain object-left"
-              />
-            </div>
+            <Image
+              src="/breaktime/breaktimelogo.jpg"
+              alt="Breaktime"
+              width={460}
+              height={190}
+              className="w-[220px] sm:w-[320px] md:w-[460px] h-auto object-contain mix-blend-multiply mb-6"
+            />
             <p className="text-xs tracking-[0.4em] uppercase text-teal-600 mb-5 font-medium">
               24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
             </p>
@@ -161,14 +159,13 @@ export default function BreaktimePage() {
           >
             Back to Portfolio
           </Link>
-          <div className="relative h-7 w-24 opacity-50">
-            <Image
-              src="/breaktime/breaktimelogo.jpg"
-              alt="Breaktime"
-              fill
-              className="object-contain"
-            />
-          </div>
+          <Image
+            src="/breaktime/breaktimelogo.jpg"
+            alt="Breaktime"
+            width={120}
+            height={50}
+            className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
+          />
           <p className="text-teal-800/40 text-xs">
             © 2024 Breaktime. All rights reserved.
           </p>

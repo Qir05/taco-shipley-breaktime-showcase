@@ -90,14 +90,13 @@ export default function HomePage() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative h-16 w-[230px] md:w-[330px] mb-5">
-              <Image
-                src="/shipley/shipley-cursive-logo.jpg"
-                alt="Shipley Donuts"
-                fill
-                className="object-contain object-left"
-              />
-            </div>
+            <Image
+              src="/shipley/shipley-cursive-logo.jpg"
+              alt="Shipley Donuts"
+              width={500}
+              height={120}
+              className="w-[220px] sm:w-[300px] md:w-[420px] h-auto object-contain mix-blend-multiply mb-5"
+            />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
               Since 1936
             </p>
@@ -122,14 +121,13 @@ export default function HomePage() {
       <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
-            <div className="relative h-16 w-[230px] md:w-[330px] mb-5">
-              <Image
-                src="/breaktime/breaktimelogo.jpg"
-                alt="Breaktime"
-                fill
-                className="object-contain object-left"
-              />
-            </div>
+            <Image
+              src="/breaktime/breaktimelogo.jpg"
+              alt="Breaktime"
+              width={460}
+              height={190}
+              className="w-[220px] sm:w-[320px] md:w-[450px] h-auto object-contain mix-blend-multiply mb-5"
+            />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
               24/7 Service
             </p>
@@ -173,25 +171,27 @@ export default function HomePage() {
             {/* Shipley cursive logo */}
             <Link
               href="/shipley-donuts"
-              className="relative h-8 w-36 opacity-70 hover:opacity-100 transition-opacity duration-200 block flex-shrink-0"
+              className="opacity-70 hover:opacity-100 transition-opacity duration-200 flex-shrink-0"
             >
               <Image
                 src="/shipley/shipley-cursive-logo.jpg"
                 alt="Shipley Donuts"
-                fill
-                className="object-contain"
+                width={160}
+                height={40}
+                className="h-8 w-auto object-contain mix-blend-multiply"
               />
             </Link>
             {/* Breaktime logo */}
             <Link
               href="/breaktime"
-              className="relative h-8 w-28 opacity-70 hover:opacity-100 transition-opacity duration-200 block flex-shrink-0"
+              className="opacity-70 hover:opacity-100 transition-opacity duration-200 flex-shrink-0"
             >
               <Image
                 src="/breaktime/breaktimelogo.jpg"
                 alt="Breaktime"
-                fill
-                className="object-contain"
+                width={120}
+                height={50}
+                className="h-8 w-auto object-contain mix-blend-multiply"
               />
             </Link>
           </div>

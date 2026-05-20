@@ -43,14 +43,13 @@ export default function ShipleyPage() {
         >
           Back to Portfolio
         </Link>
-        <div className="relative h-7 w-36">
-          <Image
-            src="/shipley/shipley-cursive-logo.jpg"
-            alt="Shipley Donuts"
-            fill
-            className="object-contain"
-          />
-        </div>
+        <Image
+          src="/shipley/shipley-cursive-logo.jpg"
+          alt="Shipley Donuts"
+          width={160}
+          height={40}
+          className="h-7 w-auto object-contain mix-blend-multiply"
+        />
       </nav>
 
       {/* ─── SPLIT HERO — large rounded image left, text right ─── */}
@@ -70,14 +69,13 @@ export default function ShipleyPage() {
 
           {/* Text — right */}
           <div className="order-1 md:order-2">
-            <div className="relative h-16 w-[230px] md:w-[340px] mb-6">
-              <Image
-                src="/shipley/shipley-cursive-logo.jpg"
-                alt="Shipley Donuts"
-                fill
-                className="object-contain object-left"
-              />
-            </div>
+            <Image
+              src="/shipley/shipley-cursive-logo.jpg"
+              alt="Shipley Donuts"
+              width={500}
+              height={120}
+              className="w-[220px] sm:w-[330px] md:w-[440px] h-auto object-contain mix-blend-multiply mb-6"
+            />
             <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-5 font-medium">
               Since 1936&nbsp;&nbsp;•&nbsp;&nbsp;Fresh Daily at 5am
             </p>
@@ -205,14 +203,13 @@ export default function ShipleyPage() {
           >
             Back to Portfolio
           </Link>
-          <div className="relative h-7 w-32 opacity-50">
-            <Image
-              src="/shipley/shipley-cursive-logo.jpg"
-              alt="Shipley Donuts"
-              fill
-              className="object-contain"
-            />
-          </div>
+          <Image
+            src="/shipley/shipley-cursive-logo.jpg"
+            alt="Shipley Donuts"
+            width={160}
+            height={40}
+            className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
+          />
           <p className="text-amber-800/40 text-xs">
             © 1936 Shipley Do-Nuts. All rights reserved.
           </p>
