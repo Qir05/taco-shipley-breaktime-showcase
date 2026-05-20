@@ -49,11 +49,11 @@ export default function HomePage() {
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
           <div>
             <Image
-              src="/taco/tacobell-logo.jpg"
+              src="/taco/tacobell-logo2.jpg"
               alt="Taco Bell"
               width={300}
               height={200}
-              className="w-[280px] sm:w-[380px] md:w-[480px] h-auto object-contain mix-blend-multiply mb-5"
+              className="w-[280px] sm:w-[380px] md:w-[480px] h-auto object-contain mix-blend-multiply mb-2"
               style={{ mixBlendMode: "multiply" }}
             />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
@@ -134,7 +134,7 @@ export default function HomePage() {
               alt="Breaktime"
               width={460}
               height={190}
-              className="w-[220px] sm:w-[320px] md:w-[450px] h-auto object-contain mix-blend-multiply mb-5"
+              className="w-[220px] sm:w-[320px] md:w-[450px] h-auto object-contain mix-blend-multiply mb-2"
             />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
               24/7 Service
@@ -175,7 +175,7 @@ export default function HomePage() {
               className="opacity-70 hover:opacity-100 transition-opacity duration-200 flex-shrink-0"
             >
               <Image
-                src="/taco/tacobell-logo.jpg"
+                src="/taco/tacobell-logo2.jpg"
                 alt="Taco Bell"
                 width={100}
                 height={67}

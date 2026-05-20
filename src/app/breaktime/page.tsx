@@ -57,7 +57,7 @@ export default function BreaktimePage() {
               alt="Breaktime"
               width={460}
               height={190}
-              className="w-[220px] sm:w-[320px] md:w-[460px] h-auto object-contain mix-blend-multiply mb-6"
+              className="w-[220px] sm:w-[320px] md:w-[460px] h-auto object-contain mix-blend-multiply mb-2"
             />
             <p className="text-xs tracking-[0.4em] uppercase text-teal-600 mb-5 font-medium">
               24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
