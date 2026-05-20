@@ -47,28 +47,29 @@ export default function HomePage() {
       {/* ─── TACO BELL SECTION — text left, image right ─── */}
       <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div>
-            <Image
-              src="/taco/tacobell-logo2.jpg"
-              alt="Taco Bell"
-              width={300}
-              height={200}
-              className="w-[280px] sm:w-[380px] md:w-[480px] h-auto object-contain mix-blend-multiply mb-2"
-              style={{ mixBlendMode: "multiply" }}
-            />
-            <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
+          <div className="flex flex-col items-start">
+            <div className="relative w-[280px] sm:w-[380px] md:w-[480px] max-w-full h-[110px] sm:h-[150px] md:h-[190px]">
+              <Image
+                src="/taco/tacobell-logo2.jpg"
+                alt="Taco Bell"
+                fill
+                className="object-contain object-left mix-blend-multiply"
+                style={{ mixBlendMode: "multiply" }}
+              />
+            </div>
+            <p className="mt-5 text-xs tracking-[0.4em] uppercase text-slate-400">
               Est. 1962
             </p>
-            <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none mb-5">
+            <h2 className="mt-4 text-5xl md:text-6xl font-black text-slate-900 leading-none">
               Taco Bell
             </h2>
-            <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="mt-5 text-slate-500 text-lg leading-relaxed max-w-md">
               Bold flavors that defy the ordinary. A legendary menu built for
               every craving, every hour of the day.
             </p>
             <Link
               href="/taco-bell"
-              className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#702082] text-white rounded-full px-9 py-4 hover:bg-[#5a1a6a] transition-colors duration-300"
+              className="mt-8 inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#702082] text-white rounded-full px-9 py-4 hover:bg-[#5a1a6a] transition-colors duration-300"
             >
               Live More
             </Link>
@@ -128,27 +129,28 @@ export default function HomePage() {
       {/* ─── BREAKTIME SECTION — text left, image right ─── */}
       <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div>
-            <Image
-              src="/breaktime/breaktime-logo1.jpg"
-              alt="Breaktime"
-              width={460}
-              height={190}
-              className="w-[220px] sm:w-[320px] md:w-[450px] h-auto object-contain mix-blend-multiply mb-2"
-            />
-            <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
+          <div className="flex flex-col items-start">
+            <div className="relative w-[260px] sm:w-[340px] md:w-[420px] max-w-full h-[100px] sm:h-[125px] md:h-[150px]">
+              <Image
+                src="/breaktime/breaktime-logo1.jpg"
+                alt="Breaktime"
+                fill
+                className="object-contain object-left mix-blend-multiply"
+              />
+            </div>
+            <p className="mt-5 text-xs tracking-[0.4em] uppercase text-slate-400">
               24/7 Service
             </p>
-            <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none mb-5">
+            <h2 className="mt-4 text-5xl md:text-6xl font-black text-slate-900 leading-none">
               Fuel Your Journey
             </h2>
-            <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="mt-5 text-slate-500 text-lg leading-relaxed max-w-md">
               Premium destination, fresh food and everything you need to
               recharge your vehicle and yourself.
             </p>
             <Link
               href="/breaktime"
-              className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-teal-600 text-white rounded-full px-9 py-4 hover:bg-teal-500 transition-colors duration-300"
+              className="mt-8 inline-block text-sm font-bold tracking-[0.15em] uppercase bg-teal-600 text-white rounded-full px-9 py-4 hover:bg-teal-500 transition-colors duration-300"
             >
               Fuel Your Journey
             </Link>

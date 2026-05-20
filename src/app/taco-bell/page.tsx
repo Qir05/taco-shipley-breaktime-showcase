@@ -46,33 +46,34 @@ export default function TacoBellPage() {
       <section className="min-h-screen px-6 md:px-16 flex items-center pt-20">
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
           {/* Text */}
-          <div>
-            <Image
-              src="/taco/tacobell-logo2.jpg"
-              alt="Taco Bell"
-              width={300}
-              height={200}
-              className="w-[300px] sm:w-[400px] md:w-[500px] h-auto object-contain mix-blend-multiply mb-2"
-              style={{ mixBlendMode: "multiply" }}
-            />
-            <p className="text-xs tracking-[0.4em] uppercase text-[#702082] mb-5 font-medium">
+          <div className="flex flex-col items-start">
+            <div className="relative w-[300px] sm:w-[400px] md:w-[500px] max-w-full h-[120px] sm:h-[160px] md:h-[200px]">
+              <Image
+                src="/taco/tacobell-logo2.jpg"
+                alt="Taco Bell"
+                fill
+                className="object-contain object-left mix-blend-multiply"
+                style={{ mixBlendMode: "multiply" }}
+              />
+            </div>
+            <p className="mt-5 text-xs tracking-[0.4em] uppercase text-[#702082] font-medium">
               Est. 1962
             </p>
             <h1
-              className="font-black leading-none tracking-tight text-slate-900 mb-6"
+              className="mt-4 font-black leading-none tracking-tight text-slate-900"
               style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)" }}
             >
               Think Outside
               <br />
               The Bun
             </h1>
-            <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="mt-5 text-slate-500 text-lg leading-relaxed max-w-md">
               Bold flavors. Legendary menu. Cravings answered every hour of
               every day.
             </p>
             <Link
               href="#menu"
-              className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#702082] text-white rounded-full px-9 py-4 hover:bg-[#5a1a6a] transition-colors duration-300"
+              className="mt-8 inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#702082] text-white rounded-full px-9 py-4 hover:bg-[#5a1a6a] transition-colors duration-300"
             >
               Live More
             </Link>
