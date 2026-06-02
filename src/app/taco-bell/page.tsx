@@ -10,17 +10,17 @@ export const metadata: Metadata = {
 
 const foodItems = [
   {
-    src: "/taco/taco-food-1.jpg",
+    src: "/taco/Luxe%20Cravings%20Box.jpg",
+    name: "Luxe Cravings Box",
+    desc: "Build your own Luxe Cravings Box. We turned up the Luxe in this lineup with the new options, including vegetarian faves.",
+  },
+  {
+    src: "/taco/Crunchwrap%20Supreme.jpg",
     name: "Crunchwrap Supreme",
-    desc: "Layers of seasoned beef, nacho cheese sauce, crispy tostada, and fresh lettuce wrapped in a warm tortilla.",
+    desc: "A warm flour tortilla filled with seasoned beef, warm Nacho Cheese sauce, a crispy tostada shell, lettuce, diced tomatoes and reduced-fat sour cream that is grilled to go.",
   },
   {
-    src: "/taco/taco-food-2.jpg",
-    name: "Seasoned Burrito",
-    desc: "A perfectly grilled flour tortilla packed with bold seasoned beef, rice, and signature sauces.",
-  },
-  {
-    src: "/taco/taco-food-3.jpg",
+    src: "/taco/Burrito-1.jpg",
     name: "Signature Tacos",
     desc: "Crispy or soft shells loaded with premium ingredients and the bold flavors Taco Bell is known for.",
   },
@@ -30,7 +30,7 @@ export default function TacoBellPage() {
   return (
     <main className="bg-[#F2FAFF]">
       {/* Fixed Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex items-center justify-between bg-[#F2FAFF]/90 backdrop-blur-sm border-b border-slate-200/40">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between bg-[#F2FAFF]/90 backdrop-blur-sm border-b border-slate-200/40">
         <Link
           href="/"
           className="text-xs tracking-widest uppercase text-slate-400 hover:text-slate-800 transition-colors duration-200"
@@ -43,8 +43,8 @@ export default function TacoBellPage() {
       </nav>
 
       {/* ─── SPLIT HERO — text left, large rounded image right ─── */}
-      <section className="min-h-screen px-6 md:px-16 flex items-center pt-20">
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
+      <section className="min-h-screen px-4 sm:px-6 md:px-16 flex items-center pt-16 sm:pt-20">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center py-10 sm:py-16">
           {/* Text */}
           <div className="flex flex-col items-start">
             <Image
@@ -52,11 +52,11 @@ export default function TacoBellPage() {
               alt="Taco Bell"
               width={900}
               height={300}
-              className="w-[420px] sm:w-[500px] md:w-[560px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[280px] sm:w-[420px] md:w-[560px] max-w-full h-auto object-contain object-left mix-blend-multiply"
               style={{ mixBlendMode: "multiply" }}
             />
-            <div className="mt-[-40px] sm:mt-[-55px] md:mt-[-70px]">
-              <p className="mb-4 text-xs tracking-[0.4em] uppercase text-[#702082] font-medium">
+            <div className="mt-[-25px] sm:mt-[-40px] md:mt-[-70px]">
+              <p className="mb-3 text-xs tracking-[0.4em] uppercase text-[#702082] font-medium">
                 Est. 1962
               </p>
               <h1
@@ -65,7 +65,7 @@ export default function TacoBellPage() {
               >
                 Think Outside
                 <br />
-                The Bun
+                The Bun.
               </h1>
               <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
                 Bold flavors. Legendary menu. Cravings answered every hour of
@@ -85,17 +85,17 @@ export default function TacoBellPage() {
             images={[
               { src: "/taco/taco-building.jpg", alt: "Taco Bell" },
               { src: "/taco/taco-station.jpg", alt: "Taco Bell Station" },
-              { src: "/taco/taco-food-1.jpg", alt: "Taco Bell Food" },
-              { src: "/taco/taco-food-2.jpg", alt: "Taco Bell Food" },
-              { src: "/taco/taco-food-3.jpg", alt: "Taco Bell Food" },
+              { src: "/taco/Luxe%20Cravings%20Box.jpg", alt: "Luxe Cravings Box" },
+              { src: "/taco/Crunchwrap%20Supreme.jpg", alt: "Crunchwrap Supreme" },
+              { src: "/taco/Burrito-1.jpg", alt: "Seasoned Burrito" },
             ]}
-            className="rounded-3xl shadow-2xl shadow-slate-200 h-[420px] md:h-[600px]"
+            className="rounded-3xl shadow-2xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[600px]"
           />
         </div>
       </section>
 
       {/* ─── STATION — full-width rounded image with text overlay ─── */}
-      <section className="px-6 md:px-16 py-10 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-16 py-8 sm:py-10 max-w-7xl mx-auto">
         <div className="group relative rounded-3xl overflow-hidden shadow-lg shadow-slate-200 h-[50vh]">
           <Image
             src="/taco/taco-station.jpg"
@@ -123,7 +123,7 @@ export default function TacoBellPage() {
       </section>
 
       {/* ─── FOOD MENU GRID ─── */}
-      <section id="menu" className="px-6 md:px-16 py-20 max-w-7xl mx-auto">
+      <section id="menu" className="px-4 sm:px-6 md:px-16 py-14 sm:py-20 max-w-7xl mx-auto">
         <div className="mb-12">
           <p className="text-xs tracking-[0.4em] uppercase text-[#702082] mb-3 font-medium">
             Our Menu
@@ -144,7 +144,7 @@ export default function TacoBellPage() {
                   src={item.src}
                   alt={item.name}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -162,8 +162,8 @@ export default function TacoBellPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200/60 px-8 py-10 bg-[#F2FAFF]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <footer className="border-t border-slate-200/60 px-4 sm:px-8 py-8 sm:py-10 bg-[#F2FAFF]">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
           <Link
             href="/"
             className="inline-block text-xs tracking-widest uppercase font-medium text-[#702082] border border-[#702082]/30 rounded-full px-6 py-3 hover:bg-[#702082] hover:text-white transition-all duration-300"
@@ -171,7 +171,7 @@ export default function TacoBellPage() {
             Back to Portfolio
           </Link>
           <p className="text-slate-400 text-xs">
-            © 1962 Taco Bell. All rights reserved.
+            © 2026 All Rights reserved.
           </p>
         </div>
       </footer>

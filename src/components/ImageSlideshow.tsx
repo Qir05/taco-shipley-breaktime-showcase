@@ -11,9 +11,10 @@ interface SlideImage {
 interface Props {
   images: SlideImage[];
   className?: string;
+  objectFit?: "cover" | "contain";
 }
 
-export default function ImageSlideshow({ images, className = "" }: Props) {
+export default function ImageSlideshow({ images, className = "", objectFit = "cover" }: Props) {
   const [current, setCurrent] = useState(0);
   const [paused, setPaused] = useState(false);
 
@@ -35,7 +36,7 @@ export default function ImageSlideshow({ images, className = "" }: Props) {
     >
       {images.map((img, i) => (
         <div
-          key={img.src}
+          key={`${img.src}-${i}`}
           className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
             i === current ? "opacity-100 z-10" : "opacity-0 z-0"
           }`}
@@ -44,7 +45,7 @@ export default function ImageSlideshow({ images, className = "" }: Props) {
             src={img.src}
             alt={img.alt}
             fill
-            className="object-cover"
+            className={objectFit === "contain" ? "object-contain" : "object-cover"}
             sizes="(max-width: 768px) 100vw, 50vw"
             priority={i === 0}
           />

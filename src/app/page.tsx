@@ -5,23 +5,23 @@ export default function HomePage() {
   return (
     <main className="bg-[#EEF7FF]">
       {/* Nav — right-aligned only, no left text */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-4 flex items-center justify-end bg-[#EEF7FF]/90 backdrop-blur-sm">
-        <div className="flex gap-1">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-8 py-3 sm:py-4 flex items-center justify-end bg-[#EEF7FF]/90 backdrop-blur-sm">
+        <div className="flex gap-0.5">
           <Link
             href="/taco-bell"
-            className="text-xs tracking-widest uppercase text-[#50627A] hover:text-[#111827] hover:bg-white/55 px-3 py-1.5 rounded-full transition-all duration-200"
+            className="text-[10px] sm:text-xs tracking-wide sm:tracking-widest uppercase text-[#50627A] hover:text-[#111827] hover:bg-white/55 px-2 sm:px-3 py-1.5 rounded-full transition-all duration-200 whitespace-nowrap"
           >
             Taco Bell
           </Link>
           <Link
             href="/shipley-donuts"
-            className="text-xs tracking-widest uppercase text-[#50627A] hover:text-[#111827] hover:bg-white/55 px-3 py-1.5 rounded-full transition-all duration-200"
+            className="text-[10px] sm:text-xs tracking-wide sm:tracking-widest uppercase text-[#50627A] hover:text-[#111827] hover:bg-white/55 px-2 sm:px-3 py-1.5 rounded-full transition-all duration-200 whitespace-nowrap"
           >
             Shipley Donuts
           </Link>
           <Link
             href="/breaktime"
-            className="text-xs tracking-widest uppercase text-[#50627A] hover:text-[#111827] hover:bg-white/55 px-3 py-1.5 rounded-full transition-all duration-200"
+            className="text-[10px] sm:text-xs tracking-wide sm:tracking-widest uppercase text-[#50627A] hover:text-[#111827] hover:bg-white/55 px-2 sm:px-3 py-1.5 rounded-full transition-all duration-200 whitespace-nowrap"
           >
             Breaktime
           </Link>
@@ -29,13 +29,13 @@ export default function HomePage() {
       </nav>
 
       {/* ─── HERO — full viewport, centered ─── */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
-        <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-8">
+      <section className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 text-center pt-16">
+        <p className="text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase text-slate-400 mb-6 sm:mb-8">
           Taco Bell&nbsp;&nbsp;•&nbsp;&nbsp;Shipley Donuts&nbsp;&nbsp;•&nbsp;&nbsp;Breaktime
         </p>
         <h1
           className="font-black leading-none tracking-tight"
-          style={{ fontSize: "clamp(3.5rem, 9vw, 8rem)" }}
+          style={{ fontSize: "clamp(2.5rem, 9vw, 8rem)" }}
         >
           <span className="block text-slate-900">Where Soul</span>
           <span className="energy-gradient-text block bg-gradient-to-r from-violet-600 via-pink-500 to-orange-400 bg-clip-text text-transparent">
@@ -45,25 +45,25 @@ export default function HomePage() {
       </section>
 
       {/* ─── TACO BELL SECTION — text left, image right ─── */}
-      <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 md:py-28 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
           <div className="flex flex-col items-start">
             <Image
               src="/taco/tacobell-logo2.jpg"
               alt="Taco Bell"
               width={900}
               height={300}
-              className="w-[420px] sm:w-[500px] md:w-[560px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[280px] sm:w-[420px] md:w-[560px] max-w-full h-auto object-contain object-left mix-blend-multiply"
               style={{ mixBlendMode: "multiply" }}
             />
-            <div className="mt-[-40px] sm:mt-[-55px] md:mt-[-70px]">
-              <p className="mb-4 text-xs tracking-[0.4em] uppercase text-slate-400">
+            <div className="mt-[-25px] sm:mt-[-40px] md:mt-[-70px]">
+              <p className="mb-3 text-xs tracking-[0.4em] uppercase text-slate-400">
                 Est. 1962
               </p>
-              <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none mb-5">
-                Taco Bell
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 leading-none mb-4 sm:mb-5">
+                Think Outside The Bun.
               </h2>
-              <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md">
                 Bold flavors that defy the ordinary. A legendary menu built for
                 every craving, every hour of the day.
               </p>
@@ -75,7 +75,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[420px] md:h-[520px]">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px]">
             <Image
               src="/taco/taco-building.jpg"
               alt="Taco Bell"
@@ -88,9 +88,9 @@ export default function HomePage() {
       </section>
 
       {/* ─── SHIPLEY SECTION — image left, text right ─── */}
-      <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[420px] md:h-[520px] order-2 md:order-1">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 md:py-28 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px] order-2 md:order-1">
             <Image
               src="/shipley/shipley-landing-page.jpg"
               alt="Shipley Donuts"
@@ -105,15 +105,15 @@ export default function HomePage() {
               alt="Shipley Donuts"
               width={500}
               height={120}
-              className="w-[220px] sm:w-[300px] md:w-[420px] h-auto object-contain mix-blend-multiply mb-5"
+              className="w-[180px] sm:w-[280px] md:w-[420px] h-auto object-contain mix-blend-multiply mb-4 sm:mb-5"
             />
-            <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-5">
+            <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-4 sm:mb-5">
               Since 1936
             </p>
-            <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none mb-5">
-              Hot. Fresh. Iconic.
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 leading-none mb-4 sm:mb-5">
+              Make Life Delicious.
             </h2>
-            <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+            <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md">
               Handcrafted donuts and kolaches made fresh daily with the finest
               ingredients.
             </p>
@@ -128,24 +128,24 @@ export default function HomePage() {
       </section>
 
       {/* ─── BREAKTIME SECTION — text left, image right ─── */}
-      <section className="px-6 md:px-16 py-28 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 md:py-28 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
           <div className="flex flex-col items-start">
             <Image
               src="/breaktime/breaktime-logo1.jpg"
               alt="Breaktime"
               width={900}
               height={350}
-              className="w-[360px] sm:w-[440px] md:w-[520px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[240px] sm:w-[360px] md:w-[520px] max-w-full h-auto object-contain object-left mix-blend-multiply"
             />
-            <div className="mt-[-35px] sm:mt-[-50px] md:mt-[-65px]">
-              <p className="mb-4 text-xs tracking-[0.4em] uppercase text-slate-400">
+            <div className="mt-[-20px] sm:mt-[-35px] md:mt-[-65px]">
+              <p className="mb-3 text-xs tracking-[0.4em] uppercase text-slate-400">
                 24/7 Service
               </p>
-              <h2 className="text-5xl md:text-6xl font-black text-slate-900 leading-none mb-5">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 leading-none mb-4 sm:mb-5">
                 Fuel Your Journey
               </h2>
-              <p className="text-slate-500 text-lg leading-relaxed mb-10 max-w-md">
+              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md">
                 Premium destination, fresh food and everything you need to
                 recharge your vehicle and yourself.
               </p>
@@ -157,7 +157,7 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[420px] md:h-[520px]">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px]">
             <Image
               src="/breaktime/breaktime-hero1.jpg"
               alt="Breaktime"
@@ -170,9 +170,9 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-slate-200/60 px-8 py-10 bg-[#EEF7FF]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-          <div className="flex items-center gap-10">
+      <footer className="border-t border-slate-200/60 px-4 sm:px-8 py-8 sm:py-10 bg-[#EEF7FF]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
+          <div className="flex items-center gap-6 sm:gap-10">
             {/* Taco Bell logo */}
             <Link
               href="/taco-bell"
@@ -215,7 +215,7 @@ export default function HomePage() {
             </Link>
           </div>
           <p className="text-[#6B7A90] text-xs">
-            © 2026 Taco Bell&nbsp;•&nbsp;Shipley Donuts&nbsp;•&nbsp;Breaktime
+            © 2026 All Rights reserved.
           </p>
         </div>
       </footer>

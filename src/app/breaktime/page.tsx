@@ -14,16 +14,19 @@ const storeCards = [
     src: "/breaktime/breaktime-store1.jpg",
     name: "Premium Fuel",
     desc: "Top-tier gasoline and diesel for every vehicle. Quality fuel that keeps you moving forward.",
+    objectPosition: "center top",
   },
   {
     src: "/breaktime/breaktime-store2.jpg",
     name: "Fresh Food",
     desc: "Made-to-order meals and fresh grab-and-go options prepared daily for your convenience.",
+    objectPosition: "center center",
   },
   {
     src: "/breaktime/breaktime-store3.jpg",
     name: "Convenience Store",
     desc: "Everything you need for the road ahead. Travel essentials stocked and ready around the clock.",
+    objectPosition: "center center",
   },
 ];
 
@@ -31,7 +34,7 @@ export default function BreaktimePage() {
   return (
     <main className="bg-[#F0FAFA]">
       {/* Fixed Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex items-center justify-between bg-[#F0FAFA]/90 backdrop-blur-sm border-b border-teal-100/60">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between bg-[#F0FAFA]/90 backdrop-blur-sm border-b border-teal-100/60">
         <Link
           href="/"
           className="text-xs tracking-widest uppercase text-teal-700/50 hover:text-teal-900 transition-colors duration-200"
@@ -48,8 +51,8 @@ export default function BreaktimePage() {
       </nav>
 
       {/* ─── SPLIT HERO — text left, large rounded image right ─── */}
-      <section className="min-h-screen px-6 md:px-16 flex items-center pt-20">
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
+      <section className="min-h-screen px-4 sm:px-6 md:px-16 flex items-center pt-16 sm:pt-20">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center py-10 sm:py-16">
           {/* Text — left */}
           <div className="flex flex-col items-start">
             <Image
@@ -57,9 +60,9 @@ export default function BreaktimePage() {
               alt="Breaktime"
               width={900}
               height={350}
-              className="w-[360px] sm:w-[440px] md:w-[520px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[240px] sm:w-[360px] md:w-[520px] max-w-full h-auto object-contain object-left mix-blend-multiply"
             />
-            <div className="mt-[-35px] sm:mt-[-50px] md:mt-[-65px]">
+            <div className="mt-[-20px] sm:mt-[-35px] md:mt-[-65px]">
               <p className="mb-4 text-xs tracking-[0.4em] uppercase text-teal-600 font-medium">
                 24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
               </p>
@@ -92,19 +95,19 @@ export default function BreaktimePage() {
               { src: "/breaktime/breaktime-store2.jpg", alt: "Breaktime Store" },
               { src: "/breaktime/breaktime-store3.jpg", alt: "Breaktime Store" },
             ]}
-            className="rounded-3xl shadow-2xl shadow-teal-100 h-[420px] md:h-[600px]"
+            className="rounded-3xl shadow-2xl shadow-teal-100 h-[300px] sm:h-[420px] md:h-[600px]"
           />
         </div>
       </section>
 
       {/* ─── FOR THE COMMUNITY ─── */}
-      <section id="community" className="px-6 md:px-16 py-24 max-w-7xl mx-auto">
+      <section id="community" className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
         <div className="mb-14">
           <p className="text-xs tracking-[0.4em] uppercase text-teal-600 mb-4 font-medium">
             Our Mission
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-teal-950 max-w-2xl leading-tight">
-            For the Community, food and everything in between
+            For the Community, food and everything in between.
           </h2>
         </div>
 
@@ -120,6 +123,7 @@ export default function BreaktimePage() {
                   alt={card.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  style={{ objectPosition: card.objectPosition }}
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
               </div>
@@ -153,8 +157,8 @@ export default function BreaktimePage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-teal-100 px-8 py-10 bg-[#F0FAFA]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <footer className="border-t border-teal-100 px-4 sm:px-8 py-8 sm:py-10 bg-[#F0FAFA]">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
           <Link
             href="/"
             className="inline-block text-xs tracking-widest uppercase font-medium text-teal-800 border border-teal-800/25 rounded-full px-6 py-3 hover:bg-teal-800 hover:text-white transition-all duration-300"
@@ -169,7 +173,7 @@ export default function BreaktimePage() {
             className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
           />
           <p className="text-teal-800/40 text-xs">
-            © 2024 Breaktime. All rights reserved.
+            © 2026 All Rights reserved.
           </p>
         </div>
       </footer>

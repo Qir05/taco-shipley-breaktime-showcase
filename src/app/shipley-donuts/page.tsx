@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const products = [
   {
-    src: "/shipley/shipley-glazed-donut.jpg",
+    src: "/shipley/shipley-glazed%20donut.jpeg",
     name: "Original Glazed",
     desc: "Light, fluffy, and golden — our signature glaze recipe unchanged since 1936.",
   },
@@ -27,16 +27,16 @@ const products = [
 ];
 
 const bullets = [
-  "Served Hot Every Day",
-  "Fresh Daily at 5 AM",
-  "Fresh Quality Ingredients",
+  "Served Hot Every Day.",
+  "Fresh Daily at 5 AM.",
+  "Fresh Quality Ingredients.",
 ];
 
 export default function ShipleyPage() {
   return (
     <main className="bg-[#FFF8F0]">
       {/* Fixed Nav */}
-      <nav className="fixed top-0 left-0 right-0 z-50 px-8 py-5 flex items-center justify-between bg-[#FFF8F0]/90 backdrop-blur-sm border-b border-amber-100/60">
+      <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between bg-[#FFF8F0]/90 backdrop-blur-sm border-b border-amber-100/60">
         <Link
           href="/"
           className="text-xs tracking-widest uppercase text-amber-800/50 hover:text-amber-900 transition-colors duration-200"
@@ -53,18 +53,19 @@ export default function ShipleyPage() {
       </nav>
 
       {/* ─── SPLIT HERO — large rounded image left, text right ─── */}
-      <section className="min-h-screen px-6 md:px-16 flex items-center pt-20">
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-center py-16">
+      <section className="min-h-screen px-4 sm:px-6 md:px-16 flex items-center pt-16 sm:pt-20">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center py-10 sm:py-16">
           {/* Hero Slideshow — left */}
           <ImageSlideshow
             images={[
               { src: "/shipley/shipley-landing-page.jpg", alt: "Shipley Donuts" },
-              { src: "/shipley/shipley-glazed-donut.jpg", alt: "Glazed Donut" },
+              { src: "/shipley/shipley-glazed%20donut.jpeg", alt: "Glazed Donut" },
               { src: "/shipley/fresh-kolaches.jpg", alt: "Fresh Kolaches" },
               { src: "/shipley/specialty-varieties.jpg", alt: "Specialty Varieties" },
               { src: "/shipley/original-glazed.jpg", alt: "Original Glazed" },
             ]}
             className="rounded-3xl shadow-2xl shadow-amber-100 h-[420px] md:h-[600px] order-2 md:order-1"
+            objectFit="contain"
           />
 
           {/* Text — right */}
@@ -74,18 +75,18 @@ export default function ShipleyPage() {
               alt="Shipley Donuts"
               width={500}
               height={120}
-              className="w-[220px] sm:w-[330px] md:w-[440px] h-auto object-contain mix-blend-multiply mb-6"
+              className="w-[160px] sm:w-[280px] md:w-[440px] h-auto object-contain mix-blend-multiply mb-4 sm:mb-6"
             />
             <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-5 font-medium">
-              Since 1936&nbsp;&nbsp;•&nbsp;&nbsp;Fresh Daily at 5am
+              Make Life Delicious.
             </p>
             <h1
               className="font-black leading-none tracking-tight text-amber-950 mb-6"
               style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)" }}
             >
-              Hot. Fresh.
+              Make Life
               <br />
-              Iconic.
+              Delicious.
             </h1>
             <p className="text-amber-900/60 text-lg leading-relaxed mb-10 max-w-md">
               Handcrafted donuts and kolaches made fresh daily with the finest
@@ -102,8 +103,8 @@ export default function ShipleyPage() {
       </section>
 
       {/* ─── PERFECTLY GLAZED — text left, image right ─── */}
-      <section className="px-6 md:px-16 py-24 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-24 items-center">
+      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
           <div>
             <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-4 font-medium">
               Our Craft
@@ -129,10 +130,10 @@ export default function ShipleyPage() {
           </div>
           <div className="group relative rounded-3xl overflow-hidden shadow-lg shadow-amber-100 h-[380px]">
             <Image
-              src="/shipley/original-glazed.jpg"
-              alt="Original Glazed Donuts"
+              src="/shipley/shipley-glazed%20donut.jpeg"
+              alt="Glazed Donuts"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
@@ -140,7 +141,7 @@ export default function ShipleyPage() {
       </section>
 
       {/* ─── PRODUCTS GRID ─── */}
-      <section id="products" className="px-6 md:px-16 pb-24 max-w-7xl mx-auto">
+      <section id="products" className="px-4 sm:px-6 md:px-16 pb-16 sm:pb-24 max-w-7xl mx-auto">
         <div className="mb-12">
           <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-3 font-medium">
             Our Selection
@@ -195,8 +196,8 @@ export default function ShipleyPage() {
       </section>
 
       {/* Footer */}
-      <footer className="border-t border-amber-100 px-8 py-10 bg-[#FFF8F0]">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <footer className="border-t border-amber-100 px-4 sm:px-8 py-8 sm:py-10 bg-[#FFF8F0]">
+        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
           <Link
             href="/"
             className="inline-block text-xs tracking-widest uppercase font-medium text-amber-800 border border-amber-800/25 rounded-full px-6 py-3 hover:bg-amber-800 hover:text-white transition-all duration-300"
@@ -211,7 +212,7 @@ export default function ShipleyPage() {
             className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
           />
           <p className="text-amber-800/40 text-xs">
-            © 1936 Shipley Do-Nuts. All rights reserved.
+            © 2026 All Rights reserved.
           </p>
         </div>
       </footer>
