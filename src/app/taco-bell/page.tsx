@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const foodItems = [
   {
-    src: "/taco/Luxe%20Cravings%20Box.jpg",
+    src: "/taco/Luxe cravings box 2.png",
     name: "Luxe Cravings Box",
     desc: "Build your own Luxe Cravings Box. We turned up the Luxe in this lineup with the new options, including vegetarian faves.",
   },
@@ -20,7 +20,7 @@ const foodItems = [
     desc: "A warm flour tortilla filled with seasoned beef, warm Nacho Cheese sauce, a crispy tostada shell, lettuce, diced tomatoes and reduced-fat sour cream that is grilled to go.",
   },
   {
-    src: "/taco/Burrito-1.jpg",
+    src: "/taco/Burrito-2.png",
     name: "Signature Tacos",
     desc: "Crispy or soft shells loaded with premium ingredients and the bold flavors Taco Bell is known for.",
   },
@@ -129,7 +129,7 @@ export default function TacoBellPage() {
             Our Menu
           </p>
           <h2 className="text-4xl md:text-5xl font-black text-slate-900">
-            Fan Favorites
+            Favorites
           </h2>
         </div>
 
