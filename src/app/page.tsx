@@ -70,7 +70,6 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          {/* Item 4: Replace taco-building.jpg with tacobell landing page.png */}
           <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px]">
             <Image
               src="/taco/tacobell%20landing%20page.png"

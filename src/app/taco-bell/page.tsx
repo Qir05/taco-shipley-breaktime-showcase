@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 // Item 14: Updated food card images
 const foodItems = [
   {
-    src: "/taco/Luxe%20cravings%20box%202.png",
+    src: "/taco/Luxe%20Cravings%20Box.png",
     name: "Luxe Cravings Box",
     desc: "Build your own Luxe Cravings Box. We turned up the Luxe in this lineup with the new options, including vegetarian faves.",
   },
@@ -21,7 +21,7 @@ const foodItems = [
     desc: "A warm flour tortilla filled with seasoned beef, warm Nacho Cheese sauce, a crispy tostada shell, lettuce, diced tomatoes and reduced-fat sour cream that is grilled to go.",
   },
   {
-    src: "/taco/Burrito-2.png",
+    src: "/taco/Burrito-1.png",
     name: "Signature Tacos",
     desc: "Crispy or soft shells loaded with premium ingredients and the bold flavors Taco Bell is known for.",
   },
@@ -87,9 +87,9 @@ export default function TacoBellPage() {
             images={[
               { src: "/taco/tacobell%20landing%20page.png", alt: "Taco Bell" },
               { src: "/taco/tacobell%20store%20side-view.png", alt: "Taco Bell Store" },
-              { src: "/taco/Luxe%20cravings%20box%202.png", alt: "Luxe Cravings Box" },
+              { src: "/taco/Luxe%20Cravings%20Box.png", alt: "Luxe Cravings Box" },
               { src: "/taco/Crunchwrap%20Supreme.png", alt: "Crunchwrap Supreme" },
-              { src: "/taco/Burrito-2.png", alt: "Seasoned Burrito" },
+              { src: "/taco/Burrito-1.png", alt: "Seasoned Burrito" },
             ]}
             className="rounded-3xl shadow-2xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[600px]"
           />
