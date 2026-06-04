@@ -8,14 +8,15 @@ export const metadata: Metadata = {
   description: "Taco Bell — bold flavors, legendary menu since 1962.",
 };
 
+// Item 14: Updated food card images
 const foodItems = [
   {
-    src: "/taco/Luxe cravings box 2.png",
+    src: "/taco/Luxe%20cravings%20box%202.png",
     name: "Luxe Cravings Box",
     desc: "Build your own Luxe Cravings Box. We turned up the Luxe in this lineup with the new options, including vegetarian faves.",
   },
   {
-    src: "/taco/Crunchwrap%20Supreme.jpg",
+    src: "/taco/Crunchwrap%20Supreme.png",
     name: "Crunchwrap Supreme",
     desc: "A warm flour tortilla filled with seasoned beef, warm Nacho Cheese sauce, a crispy tostada shell, lettuce, diced tomatoes and reduced-fat sour cream that is grilled to go.",
   },
@@ -42,7 +43,7 @@ export default function TacoBellPage() {
         </span>
       </nav>
 
-      {/* ─── SPLIT HERO — text left, large rounded image right ─── */}
+      {/* ─── SPLIT HERO ─── */}
       <section className="min-h-screen px-4 sm:px-6 md:px-16 flex items-center pt-16 sm:pt-20">
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center py-10 sm:py-16">
           {/* Text */}
@@ -56,8 +57,9 @@ export default function TacoBellPage() {
               style={{ mixBlendMode: "multiply" }}
             />
             <div className="mt-[-25px] sm:mt-[-40px] md:mt-[-70px]">
+              {/* Item 10: Since 1962 */}
               <p className="mb-3 text-xs tracking-[0.4em] uppercase text-[#702082] font-medium">
-                Est. 1962
+                Since 1962
               </p>
               <h1
                 className="font-black leading-none tracking-tight text-slate-900 mb-6"
@@ -80,56 +82,31 @@ export default function TacoBellPage() {
             </div>
           </div>
 
-          {/* Hero Slideshow */}
+          {/* Item 11: Updated slideshow images */}
           <ImageSlideshow
             images={[
-              { src: "/taco/taco-building.jpg", alt: "Taco Bell" },
-              { src: "/taco/taco-station.jpg", alt: "Taco Bell Station" },
-              { src: "/taco/Luxe%20Cravings%20Box.jpg", alt: "Luxe Cravings Box" },
-              { src: "/taco/Crunchwrap%20Supreme.jpg", alt: "Crunchwrap Supreme" },
-              { src: "/taco/Burrito-1.jpg", alt: "Seasoned Burrito" },
+              { src: "/taco/tacobell%20landing%20page.png", alt: "Taco Bell" },
+              { src: "/taco/tacobell%20store%20side-view.png", alt: "Taco Bell Store" },
+              { src: "/taco/Luxe%20cravings%20box%202.png", alt: "Luxe Cravings Box" },
+              { src: "/taco/Crunchwrap%20Supreme.png", alt: "Crunchwrap Supreme" },
+              { src: "/taco/Burrito-2.png", alt: "Seasoned Burrito" },
             ]}
             className="rounded-3xl shadow-2xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[600px]"
           />
         </div>
       </section>
 
-      {/* ─── STATION — full-width rounded image with text overlay ─── */}
-      <section className="px-4 sm:px-6 md:px-16 py-8 sm:py-10 max-w-7xl mx-auto">
-        <div className="group relative rounded-3xl overflow-hidden shadow-lg shadow-slate-200 h-[50vh]">
-          <Image
-            src="/taco/taco-station.jpg"
-            alt="Taco Bell Station"
-            fill
-            className="object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/65 via-black/20 to-transparent" />
-          <div className="absolute inset-0 flex items-center px-12">
-            <div className="max-w-md">
-              <p className="text-xs tracking-[0.4em] uppercase text-purple-300 mb-3 font-medium">
-                Fresh Every Time
-              </p>
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-                Made to Order
-              </h2>
-              <p className="text-white/75 leading-relaxed">
-                Every item crafted fresh to your order. Bold ingredients,
-                precise assembly, maximum flavor — every single time.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Item 12: Removed "Made to Order" section */}
 
-      {/* ─── FOOD MENU GRID ─── */}
+      {/* ─── SIGNATURE FLAVORS GRID ─── */}
+      {/* Item 13: Renamed to "Signature Flavors", centered, violet color */}
       <section id="menu" className="px-4 sm:px-6 md:px-16 py-14 sm:py-20 max-w-7xl mx-auto">
-        <div className="mb-12">
-          <p className="text-xs tracking-[0.4em] uppercase text-[#702082] mb-3 font-medium">
-            Our Menu
-          </p>
-          <h2 className="text-4xl md:text-5xl font-black text-slate-900">
-            Favorites
+        <div className="mb-12 text-center">
+          <h2
+            className="text-4xl md:text-5xl font-black"
+            style={{ color: "#702082" }}
+          >
+            Signature Flavors
           </h2>
         </div>
 
@@ -161,17 +138,17 @@ export default function TacoBellPage() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-200/60 px-4 sm:px-8 py-8 sm:py-10 bg-[#F2FAFF]">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+      {/* Item 15: Footer — violet background, centered layout */}
+      <footer className="px-4 sm:px-8 py-10 sm:py-14 bg-[#702082]">
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-5">
           <Link
             href="/"
-            className="inline-block text-xs tracking-widest uppercase font-medium text-[#702082] border border-[#702082]/30 rounded-full px-6 py-3 hover:bg-[#702082] hover:text-white transition-all duration-300"
+            className="inline-block text-xs tracking-widest uppercase font-medium text-white/80 border border-white/30 rounded-full px-6 py-3 hover:bg-white hover:text-[#702082] transition-all duration-300"
           >
             Back to Portfolio
           </Link>
-          <p className="text-slate-400 text-xs">
-            © 2026 All Rights reserved.
+          <p className="text-white/70 text-xs">
+            © 2026 All rights reserved.
           </p>
         </div>
       </footer>

@@ -43,42 +43,44 @@ export default function ShipleyPage() {
         >
           Back to Portfolio
         </Link>
+        {/* Item 16: Larger logo in nav */}
         <Image
           src="/shipley/shipley-cursive-logo.jpg"
           alt="Shipley Donuts"
           width={160}
           height={40}
-          className="h-7 w-auto object-contain mix-blend-multiply"
+          className="h-9 w-auto object-contain mix-blend-multiply"
         />
       </nav>
 
-      {/* ─── SPLIT HERO — large rounded image left, text right ─── */}
+      {/* ─── SPLIT HERO ─── */}
       <section className="min-h-screen px-4 sm:px-6 md:px-16 flex items-center pt-16 sm:pt-20">
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center py-10 sm:py-16">
-          {/* Hero Slideshow — left */}
+          {/* Item 18: Slideshow — first image replaced with Shipley outside pic.png */}
           <ImageSlideshow
             images={[
-              { src: "/shipley/shipley-landing-page.jpg", alt: "Shipley Donuts" },
+              { src: "/shipley/Shipley%20outside%20pic.png", alt: "Shipley Donuts Store" },
               { src: "/shipley/shipley-glazed%20donut.jpeg", alt: "Glazed Donut" },
               { src: "/shipley/fresh-kolaches.jpg", alt: "Fresh Kolaches" },
               { src: "/shipley/specialty-varieties.jpg", alt: "Specialty Varieties" },
               { src: "/shipley/original-glazed.jpg", alt: "Original Glazed" },
             ]}
             className="rounded-3xl shadow-2xl shadow-amber-100 h-[420px] md:h-[600px] order-2 md:order-1"
-            objectFit="contain"
+            objectFit="cover"
           />
 
-          {/* Text — right */}
+          {/* Text */}
           <div className="order-1 md:order-2">
+            {/* Item 16: Larger Shipley logo — uniform with Taco Bell */}
             <Image
               src="/shipley/shipley-cursive-logo.jpg"
               alt="Shipley Donuts"
               width={500}
               height={120}
-              className="w-[160px] sm:w-[280px] md:w-[440px] h-auto object-contain mix-blend-multiply mb-4 sm:mb-6"
+              className="w-[240px] sm:w-[380px] md:w-[500px] h-auto object-contain mix-blend-multiply mb-4 sm:mb-6"
             />
             <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-5 font-medium">
-              Make Life Delicious.
+              Since 1936
             </p>
             <h1
               className="font-black leading-none tracking-tight text-amber-950 mb-6"
@@ -92,9 +94,10 @@ export default function ShipleyPage() {
               Handcrafted donuts and kolaches made fresh daily with the finest
               ingredients.
             </p>
+            {/* Item 17: Shipley button — red theme */}
             <Link
               href="#products"
-              className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-amber-500 text-white rounded-full px-9 py-4 hover:bg-amber-400 transition-colors duration-300"
+              className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#CC2027] text-white rounded-full px-9 py-4 hover:bg-[#b01d22] transition-colors duration-300"
             >
               Glaze Craze
             </Link>
@@ -102,7 +105,7 @@ export default function ShipleyPage() {
         </div>
       </section>
 
-      {/* ─── PERFECTLY GLAZED — text left, image right ─── */}
+      {/* ─── PERFECTLY GLAZED ─── */}
       <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
           <div>
@@ -118,19 +121,17 @@ export default function ShipleyPage() {
             </p>
             <ul className="space-y-3">
               {bullets.map((item) => (
-                <li
-                  key={item}
-                  className="flex items-center gap-3 text-amber-900/80"
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0" />
+                <li key={item} className="flex items-center gap-3 text-amber-900/80">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#CC2027] flex-shrink-0" />
                   {item}
                 </li>
               ))}
             </ul>
           </div>
+          {/* Item 20: Replace with donut-glazing.png */}
           <div className="group relative rounded-3xl overflow-hidden shadow-lg shadow-amber-100 h-[380px]">
             <Image
-              src="/shipley/shipley-glazed%20donut.jpeg"
+              src="/shipley/donut-glazing.png"
               alt="Glazed Donuts"
               fill
               className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
@@ -140,9 +141,10 @@ export default function ShipleyPage() {
         </div>
       </section>
 
-      {/* ─── PRODUCTS GRID ─── */}
+      {/* ─── HANDCRAFTED DAILY ─── */}
+      {/* Item 21: Center alignment for heading */}
       <section id="products" className="px-4 sm:px-6 md:px-16 pb-16 sm:pb-24 max-w-7xl mx-auto">
-        <div className="mb-12">
+        <div className="mb-12 text-center">
           <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-3 font-medium">
             Our Selection
           </p>
@@ -151,23 +153,24 @@ export default function ShipleyPage() {
           </h2>
         </div>
 
+        {/* Item 22: Restored old card format — object-contain with cream background */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {products.map((product) => (
             <div
               key={product.name}
               className="group rounded-2xl overflow-hidden bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-amber-100/80"
             >
-              <div className="relative h-56 overflow-hidden">
+              <div className="relative h-56 overflow-hidden bg-[#FFF8F0]">
                 <Image
                   src={product.src}
                   alt={product.name}
                   fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="p-4">
-                <h3 className="text-base font-bold text-slate-800 mb-1.5">
+                <h3 className="text-base font-bold text-[#CC2027] mb-1.5">
                   {product.name}
                 </h3>
                 <p className="text-slate-500 text-xs leading-relaxed">
@@ -195,9 +198,9 @@ export default function ShipleyPage() {
         </div>
       </section>
 
-      {/* Footer */}
+      {/* Item 23: Footer — © All rights reserved., centered */}
       <footer className="border-t border-amber-100 px-4 sm:px-8 py-8 sm:py-10 bg-[#FFF8F0]">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col items-center gap-4 sm:gap-5">
           <Link
             href="/"
             className="inline-block text-xs tracking-widest uppercase font-medium text-amber-800 border border-amber-800/25 rounded-full px-6 py-3 hover:bg-amber-800 hover:text-white transition-all duration-300"
@@ -212,7 +215,7 @@ export default function ShipleyPage() {
             className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
           />
           <p className="text-amber-800/40 text-xs">
-            © 2026 All Rights reserved.
+            © All rights reserved.
           </p>
         </div>
       </footer>
