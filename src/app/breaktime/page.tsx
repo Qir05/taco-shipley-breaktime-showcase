@@ -51,7 +51,7 @@ export default function BreaktimePage() {
       </nav>
 
       {/* ─── SPLIT HERO ─── */}
-      <section className="px-4 sm:px-6 md:px-16 pt-20 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center overflow-hidden">
+      <section className="px-4 sm:px-6 md:px-16 pt-16 pb-10 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center overflow-hidden">
         {/*
           grid-cols-1 is explicit so mobile never defaults to an
           implicit auto-sized column that can overflow.
@@ -70,8 +70,9 @@ export default function BreaktimePage() {
             />
             {/* Negative margin only on md+ to avoid overlap quirks when centered */}
             <div className="mt-3 sm:mt-1 md:mt-[-55px] w-full">
-              <p className="mb-3 text-xs tracking-[0.4em] uppercase text-[#1B3A6B] font-medium">
-                24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
+              {/* Mobile: smaller text + tight tracking so it never overflows; wrap-safe separators */}
+              <p className="mb-3 text-[10px] sm:text-xs tracking-[0.1em] sm:tracking-[0.3em] md:tracking-[0.4em] uppercase text-[#1B3A6B] font-medium leading-snug">
+                24/7 Service&nbsp;•&nbsp;Dependable&nbsp;•&nbsp;Accessible
               </p>
               <h1
                 className="font-black leading-none tracking-tight text-[#0D2044] mb-5"
