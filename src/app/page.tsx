@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <main className="bg-[#EEF7FF]">
+    <main className="bg-[#EEF7FF] overflow-x-hidden">
       {/* Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-3 sm:px-8 py-3 sm:py-4 flex items-center justify-end bg-[#EEF7FF]/90 backdrop-blur-sm">
         <div className="flex gap-0.5">

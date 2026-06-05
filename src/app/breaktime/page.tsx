@@ -9,7 +9,6 @@ export const metadata: Metadata = {
     "Breaktime — premium fuel, fresh food, and everything you need 24/7.",
 };
 
-// Item 30: Premium Fuel card image updated to Breaktime1.png
 const storeCards = [
   {
     src: "/breaktime/Breaktime1.png",
@@ -33,7 +32,7 @@ const storeCards = [
 
 export default function BreaktimePage() {
   return (
-    <main className="bg-[#F0F5FF]">
+    <main className="bg-[#F0F5FF] overflow-x-hidden">
       {/* Fixed Nav */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-8 py-4 sm:py-5 flex items-center justify-between bg-[#F0F5FF]/90 backdrop-blur-sm border-b border-blue-200/40">
         <Link
@@ -52,8 +51,9 @@ export default function BreaktimePage() {
       </nav>
 
       {/* ─── SPLIT HERO ─── */}
-      <section className="min-h-screen px-4 sm:px-6 md:px-16 flex items-center pt-16 sm:pt-20">
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center py-10 sm:py-16">
+      {/* Mobile: stacked with padding. md+: full-viewport centered. */}
+      <section className="px-4 sm:px-6 md:px-16 pt-20 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center">
+        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 items-center md:py-16">
           {/* Text */}
           <div className="flex flex-col items-start">
             <Image
@@ -61,69 +61,65 @@ export default function BreaktimePage() {
               alt="Breaktime"
               width={900}
               height={350}
-              className="w-[240px] sm:w-[360px] md:w-[520px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[200px] sm:w-[320px] md:w-[480px] max-w-full h-auto object-contain object-left mix-blend-multiply"
             />
-            <div className="mt-[-20px] sm:mt-[-35px] md:mt-[-65px]">
-              <p className="mb-4 text-xs tracking-[0.4em] uppercase text-[#1B3A6B] font-medium">
+            <div className="mt-[-12px] sm:mt-[-25px] md:mt-[-55px]">
+              <p className="mb-3 text-xs tracking-[0.4em] uppercase text-[#1B3A6B] font-medium">
                 24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
               </p>
               <h1
-                className="font-black leading-none tracking-tight text-[#0D2044] mb-6"
-                style={{ fontSize: "clamp(3rem, 6vw, 5.5rem)" }}
+                className="font-black leading-none tracking-tight text-[#0D2044] mb-5"
+                style={{ fontSize: "clamp(2.4rem, 6vw, 5.5rem)" }}
               >
                 Fuel Your
                 <br />
                 Journey
               </h1>
-              <p className="text-[#1B3A6B]/60 text-lg leading-relaxed mb-10 max-w-md">
+              <p className="text-[#1B3A6B]/60 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
                 Premium destination, fresh food and everything you need to
                 recharge your vehicle and yourself.
               </p>
-              {/* Items 8 & 25: Breaktime button — dark blue */}
               <Link
                 href="#community"
-                className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#1B3A6B] text-white rounded-full px-9 py-4 hover:bg-[#142e58] transition-colors duration-300"
+                className="inline-block text-sm font-bold tracking-[0.15em] uppercase bg-[#1B3A6B] text-white rounded-full px-8 py-3.5 sm:px-9 sm:py-4 hover:bg-[#142e58] transition-colors duration-300"
               >
                 Fuel Your Journey
               </Link>
             </div>
           </div>
 
-          {/* Items 24, 26, 27: Updated slideshow — new first image, removed old 2nd, replaced with Breaktime1.png */}
+          {/* Slideshow — Breaktime1.png first */}
           <ImageSlideshow
             images={[
-              { src: "/breaktime/breaktime%20landing%20page.png", alt: "Breaktime" },
               { src: "/breaktime/Breaktime1.png", alt: "Breaktime Store" },
+              { src: "/breaktime/breaktime%20landing%20page.png", alt: "Breaktime" },
               { src: "/breaktime/breaktime-store2.jpg", alt: "Breaktime Store" },
               { src: "/breaktime/breaktime-store3.jpg", alt: "Breaktime Store" },
             ]}
-            className="rounded-3xl shadow-2xl shadow-blue-100 h-[300px] sm:h-[420px] md:h-[600px]"
+            className="rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-100 h-[240px] sm:h-[380px] md:h-[560px]"
           />
         </div>
       </section>
 
       {/* ─── FOR THE COMMUNITY ─── */}
-      <section id="community" className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 max-w-7xl mx-auto">
-        {/* Item 28: Removed "OUR MISSION" label */}
-        {/* Item 29: Rewritten heading, centered alignment */}
-        <div className="mb-14 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-[#0D2044] max-w-2xl leading-tight mx-auto">
+      <section id="community" className="px-4 sm:px-6 md:px-16 py-12 sm:py-16 md:py-24 max-w-7xl mx-auto">
+        <div className="mb-10 sm:mb-14 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#0D2044] max-w-2xl leading-tight mx-auto">
             For the community, food and everything in between.
           </h2>
         </div>
 
-        {/* Item 31: Restored old format — larger images, no card box wrapper */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
           {storeCards.map((card) => (
             <div key={card.name} className="group">
-              <div className="relative h-64 sm:h-72 overflow-hidden rounded-2xl mb-4">
+              <div className="relative h-52 sm:h-60 md:h-72 overflow-hidden rounded-2xl mb-4">
                 <Image
                   src={card.src}
                   alt={card.name}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   style={{ objectPosition: card.objectPosition }}
-                  sizes="(max-width: 768px) 100vw, 33vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
               </div>
               <div className="px-1">
@@ -140,22 +136,22 @@ export default function BreaktimePage() {
       </section>
 
       {/* ─── READY TO SERVE ─── */}
-      <section className="px-6 md:px-16 py-24 bg-blue-50">
+      <section className="px-4 sm:px-6 md:px-16 py-12 sm:py-16 md:py-24 bg-blue-50">
         <div className="max-w-3xl mx-auto text-center">
           <p className="text-xs tracking-[0.4em] uppercase text-[#1B3A6B] mb-4 font-medium">
             Always Here
           </p>
-          <h2 className="text-4xl md:text-5xl font-black text-[#0D2044] mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-[#0D2044] mb-5">
             Ready to Serve
           </h2>
-          <p className="text-[#1B3A6B]/70 text-lg leading-relaxed">
+          <p className="text-[#1B3A6B]/70 text-base sm:text-lg leading-relaxed">
             Open 24 hours, 7 days a week. Breaktime is here whenever you need
             to refuel, refresh, and recharge.
           </p>
         </div>
       </section>
 
-      {/* Item 32: Footer — © All rights reserved., centered */}
+      {/* Footer */}
       <footer className="border-t border-blue-100 px-4 sm:px-8 py-8 sm:py-10 bg-[#F0F5FF]">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-4 sm:gap-5">
           <Link
