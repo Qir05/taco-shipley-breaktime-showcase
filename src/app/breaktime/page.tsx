@@ -51,19 +51,25 @@ export default function BreaktimePage() {
       </nav>
 
       {/* ─── SPLIT HERO ─── */}
-      {/* Mobile: stacked with padding. md+: full-viewport centered. */}
-      <section className="px-4 sm:px-6 md:px-16 pt-20 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center">
-        <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 items-center md:py-16">
-          {/* Text */}
-          <div className="flex flex-col items-start">
+      <section className="px-4 sm:px-6 md:px-16 pt-20 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center overflow-hidden">
+        {/*
+          grid-cols-1 is explicit so mobile never defaults to an
+          implicit auto-sized column that can overflow.
+          min-w-0 on each child prevents grid blowout.
+        */}
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 items-center md:py-16">
+
+          {/* Text — centered on mobile, left-aligned on desktop */}
+          <div className="flex flex-col items-center text-center md:items-start md:text-left min-w-0 w-full">
             <Image
               src="/breaktime/breaktime-logo1.jpg"
               alt="Breaktime"
               width={900}
               height={350}
-              className="w-[200px] sm:w-[320px] md:w-[480px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[160px] sm:w-[280px] md:w-[480px] max-w-full h-auto object-contain mx-auto md:mx-0 mix-blend-multiply"
             />
-            <div className="mt-[-12px] sm:mt-[-25px] md:mt-[-55px]">
+            {/* Negative margin only on md+ to avoid overlap quirks when centered */}
+            <div className="mt-3 sm:mt-1 md:mt-[-55px] w-full">
               <p className="mb-3 text-xs tracking-[0.4em] uppercase text-[#1B3A6B] font-medium">
                 24/7 Service&nbsp;&nbsp;•&nbsp;&nbsp;Dependable&nbsp;&nbsp;•&nbsp;&nbsp;Accessible
               </p>
@@ -75,7 +81,7 @@ export default function BreaktimePage() {
                 <br />
                 Journey
               </h1>
-              <p className="text-[#1B3A6B]/60 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
+              <p className="text-[#1B3A6B]/60 text-base sm:text-lg leading-relaxed mb-8 max-w-xs sm:max-w-sm md:max-w-md mx-auto md:mx-0">
                 Premium destination, fresh food and everything you need to
                 recharge your vehicle and yourself.
               </p>
@@ -88,7 +94,7 @@ export default function BreaktimePage() {
             </div>
           </div>
 
-          {/* Slideshow — Breaktime1.png first */}
+          {/* Slideshow — w-full + min-w-0 prevents overflow on mobile */}
           <ImageSlideshow
             images={[
               { src: "/breaktime/Breaktime1.png", alt: "Breaktime Store" },
@@ -96,7 +102,7 @@ export default function BreaktimePage() {
               { src: "/breaktime/breaktime-store2.jpg", alt: "Breaktime Store" },
               { src: "/breaktime/breaktime-store3.jpg", alt: "Breaktime Store" },
             ]}
-            className="rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-100 h-[240px] sm:h-[380px] md:h-[560px]"
+            className="w-full min-w-0 rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-100 h-[300px] sm:h-[420px] md:h-[560px]"
           />
         </div>
       </section>
