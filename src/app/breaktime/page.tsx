@@ -11,19 +11,19 @@ export const metadata: Metadata = {
 
 const storeCards = [
   {
-    src: "/breaktime/Breaktime1.png",
+    src: "/breaktime/B71A4807-HDR-Edit%20-%20inside.jpg",
     name: "Premium Fuel",
     desc: "Top-tier gasoline and diesel for every vehicle. Quality fuel that keeps you moving forward.",
     objectPosition: "center center",
   },
   {
-    src: "/breaktime/breaktime-store2.jpg",
+    src: "/breaktime/Breaktime%20inside%203%20-%20middle-.png",
     name: "Fresh Food",
     desc: "Made-to-order meals and fresh grab-and-go options prepared daily for your convenience.",
     objectPosition: "center center",
   },
   {
-    src: "/breaktime/breaktime-store3.jpg",
+    src: "/breaktime/Breaktime1%20-.png",
     name: "Convenience Store",
     desc: "Everything you need for the road ahead. Travel essentials stocked and ready around the clock.",
     objectPosition: "center center",
@@ -98,10 +98,10 @@ export default function BreaktimePage() {
           {/* Slideshow — w-full + min-w-0 prevents overflow on mobile */}
           <ImageSlideshow
             images={[
-              { src: "/breaktime/Breaktime1.png", alt: "Breaktime Store" },
-              { src: "/breaktime/breaktime%20landing%20page.png", alt: "Breaktime" },
-              { src: "/breaktime/breaktime-store2.jpg", alt: "Breaktime Store" },
-              { src: "/breaktime/breaktime-store3.jpg", alt: "Breaktime Store" },
+              { src: "/breaktime/B71A4807-HDR-Edit%20-%20inside.jpg", alt: "Breaktime Store" },
+              { src: "/breaktime/Breaktime1%20-.png", alt: "Breaktime" },
+              { src: "/breaktime/Breaktime%20inside%203%20-%20middle-.png", alt: "Breaktime Inside" },
+              { src: "/breaktime/B71A4864-HDR%20-%20inside2.png", alt: "Breaktime Store" },
             ]}
             className="w-full min-w-0 rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-100 h-[300px] sm:h-[420px] md:h-[560px]"
           />
@@ -112,8 +112,11 @@ export default function BreaktimePage() {
       <section id="community" className="px-4 sm:px-6 md:px-16 py-12 sm:py-16 md:py-24 max-w-7xl mx-auto">
         <div className="mb-10 sm:mb-14 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#0D2044] max-w-2xl leading-tight mx-auto">
-            For the community, food and everything in between.
+            Your Every Day, Made Better
           </h2>
+          <p className="text-[#1B3A6B]/60 text-base sm:text-lg leading-relaxed mt-4 max-w-xl mx-auto">
+            Your one-stop neighborhood stop for fresh snacks, cold drinks and everyday essentials.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
@@ -175,7 +178,7 @@ export default function BreaktimePage() {
             className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
           />
           <p className="text-[#1B3A6B]/40 text-xs">
-            © All rights reserved.
+            © 2026 All rights reserved
           </p>
         </div>
       </footer>

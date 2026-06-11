@@ -21,7 +21,7 @@ export default function HomePage() {
 
       {/* ─── HERO ─── */}
       {/* Item 1: Reduced top space — min-h-[55vh] instead of min-h-screen */}
-      <section className="min-h-[55vh] sm:min-h-[70vh] flex flex-col items-center justify-center px-4 sm:px-6 text-center pt-16">
+      <section className="sm:min-h-[70vh] flex flex-col items-center sm:justify-center px-4 sm:px-6 text-center pt-20 sm:pt-16 pb-8 sm:pb-0">
         <p className="text-[10px] sm:text-xs tracking-[0.3em] sm:tracking-[0.4em] uppercase text-slate-400 mb-6 sm:mb-8">
           Taco Bell&nbsp;&nbsp;•&nbsp;&nbsp;Shipley Donuts&nbsp;&nbsp;•&nbsp;&nbsp;Breaktime
         </p>
@@ -161,7 +161,7 @@ export default function HomePage() {
           </div>
           <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px]">
             <Image
-              src="/breaktime/breaktime%20landing%20page.png"
+              src="/breaktime/B71A4840-HDR-Edit%20-%20front%20page.jpg"
               alt="Breaktime"
               fill
               className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
@@ -175,7 +175,7 @@ export default function HomePage() {
       <footer className="border-t border-slate-200/60 px-4 sm:px-8 py-8 sm:py-10 bg-white">
         <div className="max-w-7xl mx-auto flex flex-col items-center gap-4 sm:gap-6">
           {/* Item 6: © All rights reserved */}
-          <p className="text-[#6B7A90] text-xs">© All rights reserved</p>
+          <p className="text-[#6B7A90] text-xs">© 2026 All rights reserved</p>
           <div className="flex items-center gap-6 sm:gap-10">
             <Link href="/taco-bell" className="opacity-70 hover:opacity-100 transition-opacity duration-200 flex-shrink-0">
               <Image

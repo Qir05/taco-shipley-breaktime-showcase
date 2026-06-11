@@ -44,16 +44,16 @@ export default function TacoBellPage() {
 
       {/* ─── SPLIT HERO ─── */}
       {/* Mobile: stacked with padding. md+: full-viewport centered. */}
-      <section className="px-4 sm:px-6 md:px-16 pt-20 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center">
+      <section className="px-4 sm:px-6 md:px-16 pt-16 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center">
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 items-center md:py-16">
           {/* Text */}
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center text-center md:items-start md:text-left">
             <Image
               src="/taco/tacobell-logo2.jpg"
               alt="Taco Bell"
               width={900}
               height={300}
-              className="w-[200px] sm:w-[320px] md:w-[480px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[200px] sm:w-[320px] md:w-[480px] max-w-full h-auto object-contain object-center md:object-left mix-blend-multiply mx-auto md:mx-0"
               style={{ mixBlendMode: "multiply" }}
             />
             <div className="mt-[-12px] sm:mt-[-28px] md:mt-[-60px]">
@@ -68,7 +68,7 @@ export default function TacoBellPage() {
                 <br />
                 The Bun.
               </h1>
-              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
+              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto md:mx-0">
                 Bold flavors. Legendary menu. Cravings answered every hour of
                 every day.
               </p>

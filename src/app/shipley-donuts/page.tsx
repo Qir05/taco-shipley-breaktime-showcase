@@ -54,7 +54,7 @@ export default function ShipleyPage() {
 
       {/* ─── SPLIT HERO ─── */}
       {/* Mobile: stacked with padding. md+: full-viewport centered. */}
-      <section className="px-4 sm:px-6 md:px-16 pt-20 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center">
+      <section className="px-4 sm:px-6 md:px-16 pt-16 pb-12 sm:pt-24 sm:pb-16 md:min-h-screen md:flex md:items-center">
         <div className="max-w-7xl mx-auto w-full grid md:grid-cols-2 gap-8 sm:gap-10 lg:gap-24 items-center md:py-16">
           {/* Slideshow — original-glazed.jpg removed */}
           <ImageSlideshow
@@ -69,13 +69,13 @@ export default function ShipleyPage() {
           />
 
           {/* Text */}
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 flex flex-col items-center text-center md:items-start md:text-left">
             <Image
               src="/shipley/shipley-cursive-logo.jpg"
               alt="Shipley Donuts"
               width={500}
               height={120}
-              className="w-[200px] sm:w-[320px] md:w-[460px] max-w-full h-auto object-contain mix-blend-multiply mb-3 sm:mb-5"
+              className="w-[200px] sm:w-[320px] md:w-[460px] max-w-full h-auto object-contain mix-blend-multiply mb-3 sm:mb-5 mx-auto md:mx-0"
             />
             <p className="text-xs tracking-[0.4em] uppercase text-amber-700 mb-4 font-medium">
               Since 1936
@@ -88,7 +88,7 @@ export default function ShipleyPage() {
               <br />
               Delicious.
             </h1>
-            <p className="text-amber-900/60 text-base sm:text-lg leading-relaxed mb-8 max-w-md">
+            <p className="text-amber-900/60 text-base sm:text-lg leading-relaxed mb-8 max-w-md mx-auto md:mx-0">
               Handcrafted donuts and kolaches made fresh daily with the finest
               ingredients.
             </p>
@@ -210,7 +210,7 @@ export default function ShipleyPage() {
             className="h-7 w-auto object-contain mix-blend-multiply opacity-50"
           />
           <p className="text-amber-800/40 text-xs">
-            © All rights reserved.
+            © 2026 All rights reserved
           </p>
         </div>
       </footer>
