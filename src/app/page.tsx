@@ -37,19 +37,19 @@ export default function HomePage() {
       </section>
 
       {/* ─── TACO BELL SECTION ─── */}
-      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 md:py-28 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-16 pt-8 pb-10 sm:py-24 md:py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start w-full max-w-[360px] md:max-w-none mx-auto md:mx-0">
             {/* Item 2: Uniform logo size across all three sections */}
             <Image
               src="/taco/tacobell-logo2.jpg"
               alt="Taco Bell"
               width={900}
               height={300}
-              className="w-[200px] sm:w-[300px] md:w-[400px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[200px] sm:w-[300px] md:w-[400px] max-w-full h-auto object-contain object-center md:object-left mix-blend-multiply"
               style={{ mixBlendMode: "multiply" }}
             />
-            <div className="mt-[-15px] sm:mt-[-28px] md:mt-[-50px]">
+            <div className="mt-[-15px] sm:mt-[-28px] md:mt-[-50px] text-center md:text-left w-full">
               {/* Item 3: Since 1962 */}
               <p className="mb-3 text-xs tracking-[0.4em] uppercase text-slate-400">
                 Since 1962
@@ -58,7 +58,7 @@ export default function HomePage() {
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 leading-none mb-4 sm:mb-5">
                 Think Outside The Bun.
               </h2>
-              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md">
+              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md mx-auto md:mx-0">
                 Bold flavors that defy the ordinary. A legendary menu built for
                 every craving, every hour of the day.
               </p>
@@ -70,12 +70,12 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px]">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px] w-full">
             <Image
               src="/taco/tacobell%20landing%20page.png"
               alt="Taco Bell"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
@@ -83,26 +83,26 @@ export default function HomePage() {
       </section>
 
       {/* ─── SHIPLEY SECTION ─── */}
-      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 md:py-28 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-16 pt-8 pb-10 sm:py-24 md:py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
           {/* Item 19: Replace shipley-landing-page.jpg with Shipley landing page.png */}
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px] order-2 md:order-1">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px] w-full order-2 md:order-1">
             <Image
               src="/shipley/Shipley%20landing%20page.png"
               alt="Shipley Donuts"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          <div className="order-1 md:order-2">
+          <div className="order-1 md:order-2 flex flex-col items-center md:items-start w-full max-w-[360px] md:max-w-none mx-auto md:mx-0 text-center md:text-left">
             {/* Item 2: Uniform logo size */}
             <Image
               src="/shipley/shipley-cursive-logo.jpg"
               alt="Shipley Donuts"
               width={500}
               height={120}
-              className="w-[200px] sm:w-[300px] md:w-[400px] h-auto object-contain mix-blend-multiply mb-4 sm:mb-5"
+              className="w-[200px] sm:w-[300px] md:w-[400px] h-auto object-contain object-center md:object-left mix-blend-multiply mb-4 sm:mb-5"
             />
             <p className="text-xs tracking-[0.4em] uppercase text-slate-400 mb-4 sm:mb-5">
               Since 1936
@@ -111,7 +111,7 @@ export default function HomePage() {
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 leading-none mb-4 sm:mb-5">
               Make Life Delicious.
             </h2>
-            <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md">
+            <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md mx-auto md:mx-0">
               Handcrafted donuts and kolaches made fresh daily with the finest
               ingredients.
             </p>
@@ -127,18 +127,18 @@ export default function HomePage() {
       </section>
 
       {/* ─── BREAKTIME SECTION ─── */}
-      <section className="px-4 sm:px-6 md:px-16 py-16 sm:py-24 md:py-28 max-w-7xl mx-auto">
+      <section className="px-4 sm:px-6 md:px-16 pt-8 pb-10 sm:py-24 md:py-28 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8 sm:gap-12 lg:gap-24 items-center">
-          <div className="flex flex-col items-start">
+          <div className="flex flex-col items-center md:items-start w-full max-w-[360px] md:max-w-none mx-auto md:mx-0">
             {/* Item 2: Uniform logo size */}
             <Image
               src="/breaktime/breaktime-logo1.jpg"
               alt="Breaktime"
               width={900}
               height={350}
-              className="w-[200px] sm:w-[300px] md:w-[400px] max-w-full h-auto object-contain object-left mix-blend-multiply"
+              className="w-[200px] sm:w-[300px] md:w-[400px] max-w-full h-auto object-contain object-center md:object-left mix-blend-multiply"
             />
-            <div className="mt-[-12px] sm:mt-[-22px] md:mt-[-42px]">
+            <div className="mt-[-12px] sm:mt-[-22px] md:mt-[-42px] text-center md:text-left w-full">
               <p className="mb-3 text-xs tracking-[0.4em] uppercase text-slate-400">
                 24/7 Service
               </p>
@@ -146,7 +146,7 @@ export default function HomePage() {
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-black text-slate-900 leading-none mb-4 sm:mb-5">
                 Fuel Your Journey
               </h2>
-              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md">
+              <p className="text-slate-500 text-base sm:text-lg leading-relaxed mb-8 sm:mb-10 max-w-md mx-auto md:mx-0">
                 Premium destination, fresh food and everything you need to
                 recharge your vehicle and yourself.
               </p>
@@ -159,12 +159,12 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px]">
+          <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px] w-full">
             <Image
-              src="/breaktime/B71A4840-HDR-Edit%20-%20front%20page.jpg"
+              src="/breaktime/breaktime%20landing%20page.png"
               alt="Breaktime"
               fill
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+              className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>

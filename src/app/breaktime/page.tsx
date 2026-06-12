@@ -18,8 +18,8 @@ const storeCards = [
   },
   {
     src: "/breaktime/Breaktime%20inside%203%20-%20middle-.png",
-    name: "Fresh Food",
-    desc: "Made-to-order meals and fresh grab-and-go options prepared daily for your convenience.",
+    name: "Your Every Day, Made Better",
+    desc: "Your one-stop neighborhood stop for fresh snacks, cold drinks and everyday essentials.",
     objectPosition: "center center",
   },
   {
@@ -112,7 +112,7 @@ export default function BreaktimePage() {
       <section id="community" className="px-4 sm:px-6 md:px-16 py-12 sm:py-16 md:py-24 max-w-7xl mx-auto">
         <div className="mb-10 sm:mb-14 text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#0D2044] max-w-2xl leading-tight mx-auto">
-            Your Every Day, Made Better
+            For the community, food and everything in between
           </h2>
           <p className="text-[#1B3A6B]/60 text-base sm:text-lg leading-relaxed mt-4 max-w-xl mx-auto">
             Your one-stop neighborhood stop for fresh snacks, cold drinks and everyday essentials.
