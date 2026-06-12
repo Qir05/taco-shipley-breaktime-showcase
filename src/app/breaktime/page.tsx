@@ -19,7 +19,6 @@ const storeCards = [
   {
     src: "/breaktime/Breaktime%20inside%203%20-%20middle-.png",
     name: "Your Every Day, Made Better",
-    desc: "Your one-stop neighborhood stop for fresh snacks, cold drinks and everyday essentials.",
     objectPosition: "center center",
   },
   {
