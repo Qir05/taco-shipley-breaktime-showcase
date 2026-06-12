@@ -161,7 +161,7 @@ export default function HomePage() {
           </div>
           <div className="group relative rounded-3xl overflow-hidden shadow-xl shadow-slate-200 h-[300px] sm:h-[420px] md:h-[520px] w-full">
             <Image
-              src="/breaktime/breaktime%20landing%20page.png"
+              src="/breaktime/B71A4840-HDR-Edit%20-%20front%20page.jpg"
               alt="Breaktime"
               fill
               className="object-cover object-center transition-transform duration-500 group-hover:scale-[1.03]"
