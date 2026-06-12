@@ -113,9 +113,6 @@ export default function BreaktimePage() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-[#0D2044] max-w-2xl leading-tight mx-auto">
             For the community, food and everything in between
           </h2>
-          <p className="text-[#1B3A6B]/60 text-base sm:text-lg leading-relaxed mt-4 max-w-xl mx-auto">
-            Your one-stop neighborhood stop for fresh snacks, cold drinks and everyday essentials.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
