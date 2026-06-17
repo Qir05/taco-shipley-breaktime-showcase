@@ -12,7 +12,7 @@ const foodItems = [
   {
     src: "/taco/Luxe%20Cravings%20Box.png",
     name: "Luxe Cravings Box",
-    desc: "Build your own Luxe Cravings Box. We turned up the Luxe in this lineup with the new options, including vegetarian faves.",
+    desc: "Build your own Luxe Cravings Box. We turned up the Luxe in this lineup with new options, including vegetarian faves.",
   },
   {
     src: "/taco/Crunchwrap%20Supreme.png",

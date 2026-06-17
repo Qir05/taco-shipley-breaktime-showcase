@@ -22,14 +22,14 @@ const products = [
   {
     src: "/shipley/specialty-varieties.jpg",
     name: "Specialty Varieties",
-    desc: "From hot to iced coffees and chocolate donuts are crafted with the same attention to detail.",
+    desc: "From our hot and iced coffees to our chocolate donuts, everything is crafted with the same attention to detail.",
   },
 ];
 
 const bullets = [
   "Served Hot Every Day.",
   "Fresh Daily at 5 AM.",
-  "Fresh Quality Ingredients.",
+  "Crafted with the Finest Ingredients",
 ];
 
 export default function ShipleyPage() {
