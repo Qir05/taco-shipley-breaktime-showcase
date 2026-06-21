@@ -7,6 +7,7 @@ interface SlideImage {
   src: string;
   alt: string;
   objectPosition?: string;
+  objectFit?: "cover" | "contain";
 }
 
 interface Props {
@@ -46,7 +47,7 @@ export default function ImageSlideshow({ images, className = "", objectFit = "co
             src={img.src}
             alt={img.alt}
             fill
-            className={objectFit === "contain" ? "object-contain" : "object-cover"}
+            className={(img.objectFit ?? objectFit) === "contain" ? "object-contain" : "object-cover"}
             style={img.objectPosition ? { objectPosition: img.objectPosition } : undefined}
             sizes="(max-width: 768px) 100vw, 50vw"
             priority={i === 0}
