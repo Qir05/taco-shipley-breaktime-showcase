@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const storeCards = [
   {
-    src: "/breaktime/B71A4807-HDR-Edit%20-%20inside.jpg",
+    src: "/breaktime/870432c5-3f20-4e5b-bb37-140f0b228e20.jpg",
     name: "Premium Fuel",
     desc: "Top-tier gasoline and diesel for every vehicle. Quality fuel that keeps you moving forward.",
     objectPosition: "center center",
