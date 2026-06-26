@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Business Showcase",
   description:
     "A premium business showcase featuring Taco Bell, Shipley Donuts, and Breaktime.",
+  icons: {
+    icon: "/breaktime-logo1.jpg",
+  },
 };
 
 export default function RootLayout({
