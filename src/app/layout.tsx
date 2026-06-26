@@ -18,6 +18,8 @@ export const metadata: Metadata = {
     "A premium business showcase featuring Taco Bell, Shipley Donuts, and Breaktime.",
   icons: {
     icon: "/breaktime-logo1.jpg",
+    shortcut: "/breaktime-logo1.jpg",
+    apple: "/breaktime-logo1.jpg",
   },
 };
 
