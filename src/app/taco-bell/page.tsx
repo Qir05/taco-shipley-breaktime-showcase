@@ -4,7 +4,7 @@ import Link from "next/link";
 import ImageSlideshow from "@/components/ImageSlideshow";
 
 export const metadata: Metadata = {
-  title: "Taco Bell | Business Showcase",
+  title: "Taco Bell | Break Time Retail",
   description: "Taco Bell — bold flavors, legendary menu since 1962.",
 };
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 import ImageSlideshow from "@/components/ImageSlideshow";
 
 export const metadata: Metadata = {
-  title: "Breaktime | Business Showcase",
+  title: "Breaktime | Break Time Retail",
   description:
     "Breaktime — premium fuel, fresh food, and everything you need 24/7.",
 };

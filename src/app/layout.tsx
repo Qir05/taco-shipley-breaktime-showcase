@@ -13,9 +13,18 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Business Showcase",
-  description:
-    "A premium business showcase featuring Taco Bell, Shipley Donuts, and Breaktime.",
+  title: "Break Time Retail",
+  description: "Taco Bell, Shipley Donuts, and Breaktime.",
+  openGraph: {
+    title: "Break Time Retail",
+    description: "Taco Bell, Shipley Donuts, and Breaktime.",
+    siteName: "Break Time Retail",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Break Time Retail",
+    description: "Taco Bell, Shipley Donuts, and Breaktime.",
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

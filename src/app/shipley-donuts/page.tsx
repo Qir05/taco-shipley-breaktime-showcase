@@ -4,7 +4,7 @@ import Link from "next/link";
 import ImageSlideshow from "@/components/ImageSlideshow";
 
 export const metadata: Metadata = {
-  title: "Shipley Donuts | Business Showcase",
+  title: "Shipley Donuts | Break Time Retail",
   description: "Shipley Do-Nuts — hot, fresh, and iconic since 1936.",
 };
 
