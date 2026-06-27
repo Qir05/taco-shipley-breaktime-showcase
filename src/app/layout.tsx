@@ -13,24 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.breaktimeretail.com"),
   title: "Break Time Retail",
   description: "Taco Bell, Shipley Donuts, and Breaktime.",
   openGraph: {
     title: "Break Time Retail",
     description: "Taco Bell, Shipley Donuts, and Breaktime.",
+    url: "https://www.breaktimeretail.com/",
     siteName: "Break Time Retail",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Break Time Retail",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Break Time Retail",
     description: "Taco Bell, Shipley Donuts, and Breaktime.",
+    images: ["/og-image.jpg"],
   },
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/breaktime-logo1.jpg", type: "image/png" },
-    ],
-    shortcut: "/favicon.ico",
+    icon: "/breaktime-logo1.jpg",
+    shortcut: "/breaktime-logo1.jpg",
     apple: "/breaktime-logo1.jpg",
   },
 };
