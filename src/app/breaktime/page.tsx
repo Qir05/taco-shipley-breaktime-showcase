@@ -98,10 +98,10 @@ export default function BreaktimePage() {
           {/* Slideshow — w-full + min-w-0 prevents overflow on mobile */}
           <ImageSlideshow
             images={[
-              { src: "/breaktime/870432c5-3f20-4e5b-bb37-140f0b228e20.jpg", alt: "Breaktime Store", objectFit: "contain" },
+              { src: "/breaktime/B71A4864-HDR%20-%20inside2.png", alt: "Breaktime Store" },
               { src: "/breaktime/Breaktime1%20-.png", alt: "Breaktime" },
               { src: "/breaktime/Breaktime%20inside%203%20-%20middle-.png", alt: "Breaktime Inside" },
-              { src: "/breaktime/B71A4864-HDR%20-%20inside2.png", alt: "Breaktime Store" },
+              { src: "/breaktime/870432c5-3f20-4e5b-bb37-140f0b228e20.jpg", alt: "Breaktime Store", objectFit: "contain" },
             ]}
             className="w-full min-w-0 rounded-2xl sm:rounded-3xl shadow-2xl shadow-blue-100 h-[300px] sm:h-[420px] md:h-[560px]"
           />
